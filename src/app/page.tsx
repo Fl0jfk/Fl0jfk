@@ -13,7 +13,10 @@ function Home() {
           About Section
         </section>
         <section id="skills" className="p-4 bg-darkGrey">
-         <Skill/>
+        <h2>Skills</h2>
+         <div className=' grid grid-cols-4 gap-4'>
+          <Skill/>
+         </div> 
         </section>
         <section id="portfolio" className="p-4 bg-darkGrey">
           Portfolio

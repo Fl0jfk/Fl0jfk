@@ -10,9 +10,42 @@
         {
             "id":1,
             "name": "HTML",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5-svgrepo-com.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+        },
+        {
+            "id":2,
+            "name": "CSS",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+        },
+        {
+            "id":3,
+            "name": "JavaScript",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+        },
+        {
+            "id":4,
+            "name": "React JS et React Native",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+        },
+        {
+            "id":5,
+            "name": "Sass",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+        },
+        {
+            "id":6,
+            "name": "TypeScript",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+        },
+        {
+            "id":7,
+            "name": "Next JS",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+        },
+        {
+            "id":8,
+            "name": "Expo",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
         }
     ]
-
-
 }
