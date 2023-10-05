@@ -1,4 +1,6 @@
-import Link from 'next/link'
+"use client"
+
+import Link from 'next/link';
 
 function Social ({direction}: SocialProps) {
     const directionOFIcons = (direction === 'column' ? "flex-col self-end ": "flex-row ");

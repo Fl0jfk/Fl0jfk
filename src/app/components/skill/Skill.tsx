@@ -9,9 +9,9 @@ function Skill (){
         return (
             <>
             {data.skills.map((skill: {id: number, name: string, svg: string }) => (
-               <div key={skill.id}>
+               <div className="bg-lightGrey flex flex-col rounded-lg items-center py-14 px-4 wrap gap-3 hover:bg-greenPastel cursor-pointer w-52 h-52" key={skill.id}>
+                    <Image src={skill.svg} alt={`Logo ${skill.name}`} width="70" height="70"/>
                     <h3>{skill.name}</h3>
-                    <Image src={skill.svg} alt={`Logo ${skill.name}`} width="50" height="50"/>
                </div>
             ))} 
              </>  

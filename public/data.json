@@ -15,37 +15,184 @@
         {
             "id":2,
             "name": "CSS",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/css-3.svg"  
         },
         {
             "id":3,
             "name": "JavaScript",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/javascript.svg"  
         },
         {
             "id":4,
-            "name": "React JS et React Native",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+            "name": "React JS, React Native",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/react-javascript-js-framework-facebook.svg"  
         },
         {
             "id":5,
             "name": "Sass",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/sass.svg"  
         },
         {
             "id":6,
             "name": "TypeScript",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/typescript-official.svg"  
         },
         {
             "id":7,
             "name": "Next JS",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/next-js.svg"  
         },
         {
             "id":8,
             "name": "Expo",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/expo.svg"  
+        },
+        {
+            "id":9,
+            "name": "AWS",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/aws.svg"  
+        },
+        {
+            "id":10,
+            "name": "BootStrap",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/bootstrap.svg"  
+        },
+        {
+            "id":11,
+            "name": "GitHub",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/github-142.svg"  
+        },
+        {
+            "id":11,
+            "name": "TailWind CSS",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/tailwind.svg"  
+        },
+        {
+            "id":11,
+            "name": "Vercel",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/vercel-fill.svg"  
+        }
+    ],
+    "projects": [
+        {
+            "id":1,
+            "name": "Riding_Cities",
+            "category": "Web",
+            "img": "",
+            "description": "",
+            "techs": "HTML CSS"
+        },
+        {
+            "id":2,
+            "name": "Booki",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "HTML CSS"
+        },
+        {
+            "id":3,
+            "name": "Ohmyfood",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "HTML CSS Sass"
+        },
+        {
+            "id":4,
+            "name": "Print-It",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "HTML CSS JavaScript"
+        },
+        {
+            "id":5,
+            "name": "Portfolio Sophie Bluel",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "HTML CSS JavaScript"
+        },
+        {
+            "id":6,
+            "name": "La Maison Jungle",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "HTML CSS JavaScript"
+        },
+        {
+            "id":7,
+            "name": "Kasa",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "React Sass"
+        },
+        {
+            "id":8,
+            "name": "Calirotis",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "Next Tailwind"
+        },
+        {
+            "id":9,
+            "name": "Nina Carducci",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "HTML CSS JavaScript"
+        },
+        {
+            "id":10,
+            "name": "PhotoDroner76",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "React Sass"
+        },
+        {
+            "id":11,
+            "name": "724 Events",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "React Sass"
+        },
+        {
+            "id":12,
+            "name": "TemperatureConverter",
+            "category": "Mobile",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "React Native Expo"
+        },
+        {
+            "id":13,
+            "name": "React RTK Shop",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "React Redux Toolkit"
+        },
+        {
+            "id":14,
+            "name": "React RTK Book",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "React Redux Toolkit"
+        },
+        {
+            "id":15,
+            "name": "ArgentBank",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "description": "",
+            "techs": "React Redux Toolkit"
         }
     ]
 }

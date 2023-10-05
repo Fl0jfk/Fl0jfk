@@ -12,4 +12,4 @@ type ButtonProps = {
     full: boolean
 }
 
-export default Button
+export default Button;

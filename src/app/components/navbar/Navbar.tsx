@@ -1,6 +1,8 @@
+'use client'
+
 import Link from 'next/link';
 
-function Navbar (){
+function Navbar(){
     return (
         <nav className='flex gap-6'>
             <Link href="#about">About</Link>
