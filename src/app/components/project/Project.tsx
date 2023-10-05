@@ -10,8 +10,11 @@ function Project (){
         return (
             <>
             {data.projects.map((project: {id: number, name: string, img: string }) => (
-               <div className="bg-lightGrey flex flex-col rounded-lg items-center py-14 px-4 wrap gap-3 hover:bg-greenPastel cursor-pointer w-52 h-52" key={project.id}>
-                    <Image src={project.img} alt={`Logo ${project.name}`} width="70" height="70"/>
+               <div className="bg-lightGrey flex flex-col rounded-lg items-center justify-center wrap gap-4 hover:bg-greenPastel cursor-pointer w-72 h-72" key={`Projet n°${project.id}`}>
+                    <Image src={data.mockups[0].img} alt={data.mockups[0].name} width="230" height="230" className="bg-[url('/img/hero-pattern.svg')]"/>
+                    <div className="absolute mb-20 w-48">
+                        <Image src={project.img} alt={`Logo ${project.name}`} width="300" height="300" style={{objectFit: "contain"}}/>
+                    </div>
                     <h3>{project.name}</h3>
                </div>
             ))} 

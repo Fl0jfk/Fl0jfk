@@ -21,7 +21,7 @@ function Home() {
         </section>
         <section id="portfolio" className="p-4 bg-darkGrey flex flex-col justify-center items-center">
           <h2>Portfolio</h2>
-          <div className='grid grid-cols-3 gap-2'>
+          <div className='grid grid-cols-3 gap-2 md:grid-cols-2 sm:grid-cols-1'>
             <Project/>
           </div>
         </section>

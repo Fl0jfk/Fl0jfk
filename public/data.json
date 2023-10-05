@@ -71,6 +71,11 @@
             "id":11,
             "name": "Vercel",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/vercel-fill.svg"  
+        },
+        {
+            "id":12,
+            "name": "Redux ToolKit",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/redux.svg"  
         }
     ],
     "projects": [
@@ -78,7 +83,7 @@
             "id":1,
             "name": "Riding_Cities",
             "category": "Web",
-            "img": "",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/RidingCities+Screen.png",
             "description": "",
             "techs": "HTML CSS"
         },
@@ -102,7 +107,7 @@
             "id":4,
             "name": "Print-It",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/PrintIt+Screen.png",
             "description": "",
             "techs": "HTML CSS JavaScript"
         },
@@ -142,7 +147,7 @@
             "id":9,
             "name": "Nina Carducci",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/NinaCarducci+Screen.png",
             "description": "",
             "techs": "HTML CSS JavaScript"
         },
@@ -193,6 +198,18 @@
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
             "description": "",
             "techs": "React Redux Toolkit"
+        }
+    ],
+    "mockups" :[
+        {
+            "id":1,
+            "name": "iMac",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/mockups/apple-imac-24-inch-2021-medium.png"
+        },
+        {
+            "id":2,
+            "name": "iPhone",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/mockups/apple-iphone-15-pro-max-2023-medium.png"
         }
     ]
 }
