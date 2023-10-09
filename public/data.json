@@ -63,17 +63,17 @@
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/github-142.svg"  
         },
         {
-            "id":11,
+            "id":12,
             "name": "TailWind CSS",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/tailwind.svg"  
         },
         {
-            "id":11,
+            "id":13,
             "name": "Vercel",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/vercel-fill.svg"  
         },
         {
-            "id":12,
+            "id":14,
             "name": "Redux ToolKit",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/redux.svg"  
         }
@@ -83,7 +83,7 @@
             "id":1,
             "name": "Riding_Cities",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/RidingCities+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Riding+Cities.png",
             "description": "",
             "techs": "HTML CSS"
         },
@@ -91,7 +91,7 @@
             "id":2,
             "name": "Booki",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki.png",
             "description": "",
             "techs": "HTML CSS"
         },
@@ -99,7 +99,7 @@
             "id":3,
             "name": "Ohmyfood",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Ohmyfood.png",
             "description": "",
             "techs": "HTML CSS Sass"
         },
@@ -107,7 +107,7 @@
             "id":4,
             "name": "Print-It",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/PrintIt+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Print-It.png",
             "description": "",
             "techs": "HTML CSS JavaScript"
         },
@@ -115,7 +115,7 @@
             "id":5,
             "name": "Portfolio Sophie Bluel",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Sophie+Bluel.png",
             "description": "",
             "techs": "HTML CSS JavaScript"
         },
@@ -123,7 +123,7 @@
             "id":6,
             "name": "La Maison Jungle",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Maison+Jungle.png",
             "description": "",
             "techs": "HTML CSS JavaScript"
         },
@@ -131,7 +131,7 @@
             "id":7,
             "name": "Kasa",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Kasa.png",
             "description": "",
             "techs": "React Sass"
         },
@@ -139,7 +139,7 @@
             "id":8,
             "name": "Calirotis",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "",
             "description": "",
             "techs": "Next Tailwind"
         },
@@ -147,7 +147,7 @@
             "id":9,
             "name": "Nina Carducci",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/NinaCarducci+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Nina+Carducci.png",
             "description": "",
             "techs": "HTML CSS JavaScript"
         },
@@ -155,7 +155,7 @@
             "id":10,
             "name": "PhotoDroner76",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/PhotoDroner76.png",
             "description": "",
             "techs": "React Sass"
         },
@@ -163,7 +163,7 @@
             "id":11,
             "name": "724 Events",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/724Events.png",
             "description": "",
             "techs": "React Sass"
         },
@@ -171,7 +171,7 @@
             "id":12,
             "name": "TemperatureConverter",
             "category": "Mobile",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Temperature+Converter.PNG",
             "description": "",
             "techs": "React Native Expo"
         },
@@ -179,15 +179,15 @@
             "id":13,
             "name": "React RTK Shop",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/RTK+Shop.png",
             "description": "",
             "techs": "React Redux Toolkit"
         },
         {
             "id":14,
-            "name": "React RTK Book",
+            "name": "React RTK Books",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/RTK+Books.png",
             "description": "",
             "techs": "React Redux Toolkit"
         },
@@ -195,7 +195,7 @@
             "id":15,
             "name": "ArgentBank",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki+Screen.png",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/ArgentBank.png",
             "description": "",
             "techs": "React Redux Toolkit"
         }

@@ -4,7 +4,7 @@ import { useData } from "@/app/contexts/data";
 import Image from "next/image";
 
 function Skill (){
-    const { data } = useData();
+    const data  = useData();
     if (data) {
         return (
             <>

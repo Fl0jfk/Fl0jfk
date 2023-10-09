@@ -1,44 +1,89 @@
 import React, { createContext, useCallback, useContext, useEffect, useState, PropsWithChildren } from "react";
 
-const DataContext = createContext({});
-
-export const api = {
-  loadData: async () => {
-    const res = await fetch("/data.json");
-    if (!res.ok) {
-      throw new Error("Failed to fetch data");
-    }
-    return res.json();
-  }
+type Profile = {
+  firstname: string;
+  lastname: string;
+  profession: string;
+  profilePhoto: string;
 };
 
-export const DataProvider = ({ children }: DataProviderProps) => {
+type Skill = {
+  id: number;
+  name: string;
+  svg: string;
+};
+
+type Project = {
+  id: number;
+  name: string;
+  category: string;
+  img: string;
+  description: string;
+  techs: string;
+};
+
+type Mockup = {
+  id: number;
+  name: string;
+  img: string;
+};
+
+type Data = {
+  profile: Profile;
+  skills: Skill[];
+  projects: Project[];
+  mockups: Mockup[];
+  error: Error | null;
+};
+
+const initialData: Data = {
+  profile: {
+    firstname: "",
+    lastname: "",
+    profession: "",
+    profilePhoto: ""
+  },
+  skills: [],
+  projects: [],
+  mockups: [],
+  error: null
+};
+
+const DataContext = createContext<Data | undefined>(undefined);
+
+export const DataProvider = ({ children }: PropsWithChildren<{}>) => {
   const [error, setError] = useState<Error | null>(null);
-  const [data, setData] = useState<any | null>(null);
-  const getData = useCallback(async () => {
+  const [data, setData] = useState<Data | undefined>(undefined);
+
+  const fetchData = useCallback(async () => {
     try {
-      const res = await api.loadData();
-      setData(res);
+      const response = await fetch("/data.json");
+      if (!response.ok) {
+        throw new Error("Failed to fetch data");
+      }
+      const jsonData: Data = await response.json();
+      setData(jsonData);
     } catch (err) {
       setError(err instanceof Error ? err : new Error("An error occurred"));
     }
   }, []);
 
   useEffect(() => {
-    if (!data) {
-      getData();
-    }
-  }, [data, getData]);
+    fetchData();
+  }, [fetchData]);
 
   return (
-    <DataContext.Provider value={{data,error}}>
+    <DataContext.Provider value={data || initialData}>
       {children}
     </DataContext.Provider>
   );
 };
 
-type DataProviderProps = PropsWithChildren<{}>;
+export const useData = () => {
+  const context = useContext(DataContext);
+  if (!context) {
+    throw new Error("useData must be used within a DataProvider");
+  }
+  return context;
+};
 
-export const useData = () => useContext(DataContext);
-
-export default DataContext;
