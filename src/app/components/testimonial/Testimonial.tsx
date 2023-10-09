@@ -2,9 +2,9 @@
 
 function Testimonial (){
     return (
-        <div>
-            Testimonial
-        </div>
+        <section className="p-4 bg-darkGrey">
+            <h2 className='text-7xl mb-10'>Testimonials</h2>
+          </section>
     )
 }
 

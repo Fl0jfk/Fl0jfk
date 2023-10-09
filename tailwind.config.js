@@ -21,5 +21,10 @@ module.exports = {
       'lg': {'min': '992px', 'max': '1199px'},
       'xl': {'min': '1200px'},
     },
+    extend: {
+      height: {
+        '128': '32rem',
+      }
+    }
   },
 }
