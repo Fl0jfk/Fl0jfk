@@ -1,7 +1,6 @@
 "use client"
 
 import { DataProvider } from './contexts/data';
-
 import Banner from "./components/banner/Banner";
 import Skill from './components/skill/Skill';
 import Project from './components/project/Project';
@@ -10,6 +9,7 @@ import Head from 'next/head';
 import Experience from './components/experience/Experience';
 import Testimonial from './components/testimonial/Testimonial';
 import Contact from './components/contact/Contact';
+import ParticlesBG from './components/particles/Particles';
 
 function Home() {
   return (
@@ -19,7 +19,8 @@ function Home() {
       </Head>
       <main>
         <DataProvider>
-          <Banner/>  
+          <ParticlesBG/>
+          <Banner/>
           <About/>
           <Skill/>
           <Project/>

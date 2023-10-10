@@ -16,7 +16,7 @@ function Project (){
      if (data) {
         return (
             <section id="portfolio" className="p-4 bg-darkGrey flex flex-col justify-center items-center">
-                <h2 className='text-7xl mb-10'>Portfolio</h2>
+                <h2 className='text-7xl mb-10 md:text-5xl sm:text-4xl'>Portfolio</h2>
                 <div className='grid grid-cols-3 gap-2 md:grid-cols-2 sm:grid-cols-1'>
                     {data.projects.map((project: {id: number, name: string, img: string, category: string }) => (
                         <div className="bg-lightGrey flex flex-col rounded-lg items-center justify-center wrap gap-4 hover:bg-greenPastel hover:scale-110 cursor-pointer w-72 h-72 hover:text-darkGrey" key={`Projet n°${project.id}`}>

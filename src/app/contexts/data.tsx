@@ -9,12 +9,14 @@ type Profile = {
 
 type Skill = {
   id: number;
+  key: number;
   name: string;
   svg: string;
 };
 
 type Project = {
   id: number;
+  key: number;
   name: string;
   category: string;
   img: string;
