@@ -5,24 +5,30 @@ import Button from "../button/Button";
 import { useData } from "@/app/contexts/data";
 import Social from "../social/Social";
 import Image from "next/image";
+import ParticlesBG from "../particles/Particles";
 
 function Banner() {
   const  data  = useData();
   if (data) {
     return (
-        <section className="px-24 pt-24 bg-grey flex gap-20 relative h-128 justify-center">
-          <div className="flex flex-col gap-4 mb-36 z-1">
-            <div className="flex gap-3 items-center">
-              <p className="text-4xl">I&apos;m</p>
-              <h1 className="text-8xl text-greenPastel">{data.profile.firstname} <br/>{data.profile.lastname}</h1>
+        <section className="px-24 pt-4 xl:pt-16 bg-grey flex justify-center items-end md:px-12 sm:px-8">
+          <ParticlesBG/>
+          <div className="flex max-w-7xl items-stretch">
+            <div className="flex flex-col gap-4 justify-center mb-4">
+              <div className="flex gap-3 items-center">
+                <p className="text-4xl md:text-2xl sm:text-xl">I&apos;m</p>
+                <h1 className="text-8xl text-greenPastel lg:text-6xl md:text-5xl sm:text-4xl">{data.profile.firstname} <br/>{data.profile.lastname}</h1>
+              </div>
+              <p className="text-4xl md:text-2xl sm:text-xl">{data.profile.profession}</p>
+              <Link href="#contact">
+                  <Button text="Contact Me" full={false} />
+              </Link>
             </div>
-            <p className="text-4xl">{data.profile.profession}</p>
-            <Link href="#contact">
-                <Button text="Contact Me" full={false} />
-            </Link>
+            <div className="flex items-end z-0">
+              <Image src={data.profile.profilePhoto} alt="My profile photo" width={500} height={500} className="z-0"/>
+            </div>
+            <Social direction='column'/>
           </div>
-          <Image src={data.profile.profilePhoto} alt="My profile photo" width={400} height={280} className=" z-0"/>
-          <Social direction='column'/> 
         </section>
     );
   }
