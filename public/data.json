@@ -10,72 +10,86 @@
         {
             "id":1,
             "name": "HTML",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg",
+            "level": 90
         },
         {
             "id":2,
             "name": "CSS",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/css-3.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/css-3.svg",
+            "level": 80  
         },
         {
             "id":3,
             "name": "JavaScript",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/javascript.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/javascript.svg",
+            "level": 60  
         },
         {
             "id":4,
             "name": "React JS, React Native",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/react-javascript-js-framework-facebook.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/react-javascript-js-framework-facebook.svg",
+            "level": 60  
         },
         {
             "id":5,
             "name": "Sass",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/sass.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/sass.svg",
+            "level": 50  
         },
         {
             "id":6,
             "name": "TypeScript",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/typescript-official.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/typescript-official.svg",
+            "level": 20  
         },
         {
             "id":7,
             "name": "Next JS",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/next-js.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/next-js.svg",
+            "level": 20  
         },
         {
             "id":8,
             "name": "Expo",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/expo.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/expo.svg",
+            "level": 20  
         },
         {
             "id":9,
             "name": "AWS",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/aws.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/aws.svg",
+            "level": 50  
         },
         {
             "id":10,
             "name": "BootStrap",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/bootstrap.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/bootstrap.svg",
+            "level": 50
         },
         {
             "id":11,
             "name": "GitHub",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/github-142.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/github-142.svg",
+            "level": 50  
         },
         {
             "id":12,
             "name": "TailWind CSS",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/tailwind.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/tailwind.svg",
+            "level": 50 
         },
         {
             "id":13,
             "name": "Vercel",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/vercel-fill.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/vercel-fill.svg",
+            "level": 60  
         },
         {
             "id":14,
             "name": "Redux ToolKit",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/redux.svg"  
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/redux.svg",
+            "level": 50  
         }
     ],
     "projects": [

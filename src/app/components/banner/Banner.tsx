@@ -23,7 +23,7 @@ function Banner() {
               </Link>
             </div>
             <div className="flex items-end z-0">
-              <Image src={data.profile.profilePhoto} alt="My profile photo" width={500} height={500} className="z-0"/>
+              { data.profile.profilePhoto &&<Image src={data.profile.profilePhoto} alt="My profile photo" width={500} height={500} className="z-0"/>}
             </div>
             <Social direction='column'/>
           </div>

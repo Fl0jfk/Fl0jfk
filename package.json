@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,7 +11,7 @@
   "dependencies": {
     "next": "latest",
     "react": "latest",
-    "react-card-flip": "^1.2.2",
+    "react-card-flip": "latest",
     "react-dom": "latest",
     "react-particles": "latest",
     "react-tsparticles": "latest",

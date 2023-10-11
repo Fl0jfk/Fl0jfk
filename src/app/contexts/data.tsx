@@ -12,6 +12,7 @@ type Skill = {
   key: number;
   name: string;
   svg: string;
+  level: number;
 };
 
 type Project = {
