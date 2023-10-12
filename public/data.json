@@ -99,7 +99,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Riding+Cities.png",
             "description": "",
-            "techs": "HTML CSS"
+            "techs": "HTML CSS",
+            "github": "https://github.com/Fl0jfk/OC-Riding_Cities",
+            "website": ""
         },
         {
             "id":2,
@@ -107,7 +109,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki.png",
             "description": "",
-            "techs": "HTML CSS"
+            "techs": "HTML CSS",
+            "github": "https://github.com/Fl0jfk/OC-Booki",
+            "website": ""
         },
         {
             "id":3,
@@ -115,7 +119,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Ohmyfood.png",
             "description": "",
-            "techs": "HTML CSS Sass"
+            "techs": "HTML CSS Sass",
+            "github": "https://github.com/Fl0jfk/OC-Ohmyfood",
+            "website": ""
         },
         {
             "id":4,
@@ -123,7 +129,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Print-It.png",
             "description": "",
-            "techs": "HTML CSS JavaScript"
+            "techs": "HTML CSS JavaScript",
+            "github": "https://github.com/Fl0jfk/OC-Print-It",
+            "website": "https://fl0jfk.github.io/OC-Print-It/"
         },
         {
             "id":5,
@@ -131,7 +139,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Sophie+Bluel.png",
             "description": "",
-            "techs": "HTML CSS JavaScript"
+            "techs": "HTML CSS JavaScript",
+            "github": "https://github.com/Fl0jfk/OC-Portfolio_Sophie_Bluel",
+            "website": ""
         },
         {
             "id":6,
@@ -139,7 +149,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Maison+Jungle.png",
             "description": "",
-            "techs": "HTML CSS JavaScript"
+            "techs": "HTML CSS JavaScript",
+            "github": "https://github.com/Fl0jfk/OC-La-maison-jungle",
+            "website": ""
         },
         {
             "id":7,
@@ -147,15 +159,19 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Kasa.png",
             "description": "",
-            "techs": "React Sass"
+            "techs": "React Sass",
+            "github": "https://github.com/Fl0jfk/OC-Kasa",
+            "website": ""
         },
         {
             "id":8,
             "name": "Calirotis",
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Nina+Carducci.png",
-            "description": "",
-            "techs": "Next Tailwind"
+            "description": "Landing Page",
+            "techs": "Next Tailwind",
+            "github": "https://github.com/Fl0jfk/Calirotis",
+            "website": ""
         },
         {
             "id":9,
@@ -163,7 +179,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Nina+Carducci.png",
             "description": "",
-            "techs": "HTML CSS JavaScript"
+            "techs": "HTML CSS JavaScript",
+            "github": "https://github.com/Fl0jfk/OC-Nina_Carducci",
+            "website": ""
         },
         {
             "id":10,
@@ -171,7 +189,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/PhotoDroner76.png",
             "description": "",
-            "techs": "React Sass"
+            "techs": "React Sass",
+            "github": "https://github.com/Fl0jfk/PhotoDroner76",
+            "website": ""
         },
         {
             "id":11,
@@ -179,7 +199,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/724Events.png",
             "description": "",
-            "techs": "React Sass"
+            "techs": "React Sass",
+            "github": "https://github.com/Fl0jfk/OC-724Events",
+            "website": ""
         },
         {
             "id":12,
@@ -187,7 +209,9 @@
             "category": "Mobile",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Temperature+Converter.PNG",
             "description": "",
-            "techs": "React Native Expo"
+            "techs": "React Native Expo",
+            "github": "https://github.com/Fl0jfk/TemperatureConverter",
+            "website": ""
         },
         {
             "id":13,
@@ -195,7 +219,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/RTK+Shop.png",
             "description": "",
-            "techs": "React Redux Toolkit"
+            "techs": "React Redux Toolkit",
+            "github": "https://github.com/Fl0jfk/React-RTK-Shop",
+            "website": ""
         },
         {
             "id":14,
@@ -203,7 +229,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/RTK+Books.png",
             "description": "",
-            "techs": "React Redux Toolkit"
+            "techs": "React Redux Toolkit",
+            "github": "https://github.com/Fl0jfk/React-RTK-Books",
+            "website": ""
         },
         {
             "id":15,
@@ -211,7 +239,9 @@
             "category": "Web",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/ArgentBank.png",
             "description": "",
-            "techs": "React Redux Toolkit"
+            "techs": "React Redux Toolkit",
+            "github": "https://github.com/Fl0jfk/OC-ArgentBank",
+            "website": ""
         }
     ],
     "mockups" :[

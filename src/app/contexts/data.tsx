@@ -23,6 +23,8 @@ type Project = {
   img: string;
   description: string;
   techs: string;
+  github: string;
+  website: string;
 };
 
 type Mockup = {

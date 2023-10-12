@@ -17,11 +17,6 @@ function ParticlesBG () {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                background: {
-                    color: {
-                        value: "rgb(49 51 58)",
-                    },
-                },
                 fpsLimit: 120,
                 particles: {
                     number: {

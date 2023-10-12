@@ -1,15 +1,15 @@
-function CircleBar({ progress, isAnimating }: CircleBarProps) {
+function CircleBar({ level, isAnimating }: CircleBarProps) {
   const size = 150;
   const radius = 63.75;
   const dashArray = radius * Math.PI * 2;
-  const dashOffset = dashArray - (dashArray * progress) / 100;
+  const dashOffset = dashArray - (dashArray * level) / 100;
 
   function colorCircle() {
-    if (progress <= 32) {
+    if (level <= 32) {
       return "red";
-    } else if (progress >= 33 && progress <= 66) {
+    } else if (level >= 33 && level <= 66) {
       return "orange";
-    } else if (progress >= 67) {
+    } else if (level >= 67) {
       return "green";
     }
   }
@@ -17,7 +17,7 @@ function CircleBar({ progress, isAnimating }: CircleBarProps) {
   return (
     <div className="w-48 h-48 flex items-center justify-center">
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
-        <circle cx={size / 2} cy={size / 2} strokeWidth={5} r={radius} fill="transparent" stroke="lightGrey" />
+        <circle cx={size / 2} cy={size / 2} strokeWidth={5} r={radius} fill="transparent" stroke="grey"/>
         <circle
           cx={size / 2}
           cy={size / 2}
@@ -32,8 +32,8 @@ function CircleBar({ progress, isAnimating }: CircleBarProps) {
           strokeLinejoin="round"
           className={playAnimation}
         />
-        <text x="50%" y="50%" dy="0.3em" textAnchor="middle" className="text-darkGrey">
-          {progress}%
+        <text x="50%" y="50%" dy="0.3em" textAnchor="middle" className="text-grey">
+          {level}%
         </text>
       </svg>
       <style>
@@ -58,7 +58,7 @@ function CircleBar({ progress, isAnimating }: CircleBarProps) {
 }
 
 type CircleBarProps = {
-    progress: number;
+    level: number;
     isAnimating: boolean;
   };
 

@@ -8,7 +8,7 @@ function Social ({direction}: SocialProps) {
     return (
         <>  
             <div className='flex flex-col gap-3 justify-end items-center'>
-                <div className='bg-greenPastel w-1 h-full'>
+                <div className='bg-green w-1 h-full'>
                     
                 </div>
                 <div className={`flex ${directionOFIcons} gap-3`}>

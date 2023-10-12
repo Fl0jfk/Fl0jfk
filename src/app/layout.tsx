@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className="flex flex-col w-screen text-white">  
+      <body style={{backgroundImage: "linear-gradient(to right, #434343 0%, black 100%)"}} className="flex flex-col w-screen text-white">  
           <Header/>
             {children}
           <Footer/> 

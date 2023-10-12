@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     colors: {
       'transparent': 'transparent',
-      'white': '#FFF',
-      'greenPastel' : 'rgb(176 242 182)',
-      'grey': 'rgb(46 46 51);',
-      'darkGrey': 'rgb(49 51 58)',
-      'lightGrey': 'rgb(61 62 66)',
+      'white': '#fefefe',
+      'green' : '#4bd174',
+      'grey': '#3d455d',
+      'black': '#06142b',
+      'purple': '#694af6'
     },
     fontFamily: {
       'sans' : ['San Francisco', 'Arial', 'sans-serif']
