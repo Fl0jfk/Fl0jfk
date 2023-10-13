@@ -4,7 +4,8 @@
             "firstname" : "Florian",
             "lastname": "Hacqueville-Mathi",
             "profession": "Front Junior Developer",
-            "profilePhoto" : "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/profile/PP+Fl0jfk.png"
+            "profilePhoto" : "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/profile/PP+Fl0jfk.png",
+            "memoji" : "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/profile/Fl0jfk+Memoji.png"
         },
     "skills": [
         {

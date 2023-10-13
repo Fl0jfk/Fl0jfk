@@ -1,7 +1,7 @@
 import CircleBar from "../circle/CircleBar";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "../button/Button";
+import Button from "../buttons/Button";
 
 
 export function FrontCard ({whatCard, svg, name, mockupSrc, category, projectImg, mockupAlt} : FrontCardProps){
@@ -15,7 +15,7 @@ export function FrontCard ({whatCard, svg, name, mockupSrc, category, projectImg
     }   
     if(whatCard === "skill") {
         return (
-            <div  className="bg-grey bg-opacity-70 flex flex-col rounded-lg items-center py-14 px-4 gap-5 hover:bg-green cursor-pointer w-52 h-52 justify-center hover:text-grey">
+            <div  className="bg-grey bg-opacity-70 flex flex-col rounded-lg items-center py-14 px-4 gap-5 hover:bg-green cursor-pointer w-52 h-52 justify-center hover:text-grey sm:px2 sm:py4 sm:h-40 sm:w-40">
                 {svg &&<Image src={svg} alt={`Logo ${name}`} width="70" height="70"/>}
                 <h3 className="text-xl text-center">{name}</h3>
             </div> 
@@ -23,7 +23,7 @@ export function FrontCard ({whatCard, svg, name, mockupSrc, category, projectImg
     } else if (whatCard === "project"){
         return (
             <div className="bg-grey flex flex-col rounded-lg items-center justify-center wrap gap-4 hover:bg-green cursor-pointer w-72 h-72 hover:text-grey">
-                { mockupAlt && mockupSrc && <Image src={mockupSrc} alt={mockupAlt} width={category === "Web" ? "230" :"100"} height={category === "Web" ? "230" : "80"} className="z-50"/>}
+                { mockupAlt && mockupSrc && <Image src={mockupSrc} alt={mockupAlt} width={category === "Web" ? "230" :"100"} height={category === "Web" ? "230" : "80"}/>}
                 <div className={category === "Web" ? "absolute mb-28" : "absolute mb-10 rounded"} style={category === "Web" ? sizeContainerImageWeb : sizeContainerImageMobile}>
                     { projectImg && <Image src={projectImg} alt={`Image du site : ${name}`} fill={true} style={{objectFit: "fill"}} className={category === "Web" ? "" : "rounded-md" } sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>}
                 </div>
@@ -36,7 +36,7 @@ export function FrontCard ({whatCard, svg, name, mockupSrc, category, projectImg
 export function BackCard({whatCard, name, level, isAnimating, projectDesc, siteLink, githubLink, techs} : BackCardProps){
     if(whatCard === "skill") {
         return (
-            <div className="bg-green flex flex-col rounded-lg items-center py-2 px-4 gap-1 justify-center cursor-pointer w-52 h-52 text-grey">
+            <div className="bg-green flex flex-col rounded-lg items-center py-2 px-4 gap-1 justify-center cursor-pointer w-52 h-52 text-grey sm:px2 sm:py4 sm:h-40 sm:w-40">
                 <h3 className="text-xl text-center text-grey">{name}</h3>
                 { level && <CircleBar level={level} isAnimating={isAnimating}/>}
             </div> 

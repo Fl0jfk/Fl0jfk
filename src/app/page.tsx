@@ -1,6 +1,3 @@
-"use client"
-
-import { DataProvider } from './contexts/data';
 import Banner from "./components/banner/Banner";
 import Skill from './components/skill/Skill';
 import Project from './components/project/Project';
@@ -17,8 +14,7 @@ function Home() {
       <Head>
         <title>Page d`&apos;`accueil Flojfk</title>
       </Head>
-      <main>
-        <DataProvider>
+      <main>  
           <ParticlesBG/>
           <Banner/>
           <About/>
@@ -27,7 +23,6 @@ function Home() {
           <Experience/>
           <Testimonial/>
           <Contact/>
-        </DataProvider>
       </main>
     </> 
   )

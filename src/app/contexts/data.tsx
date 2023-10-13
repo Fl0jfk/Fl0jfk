@@ -5,6 +5,7 @@ type Profile = {
   lastname: string;
   profession: string;
   profilePhoto: string;
+  memoji: string;
 };
 
 type Skill = {
@@ -46,7 +47,8 @@ const initialData: Data = {
     firstname: "",
     lastname: "",
     profession: "",
-    profilePhoto: ""
+    profilePhoto: "",
+    memoji:""
   },
   skills: [],
   projects: [],

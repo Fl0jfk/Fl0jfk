@@ -15,7 +15,7 @@ function CircleBar({ level, isAnimating }: CircleBarProps) {
   }
   const playAnimation = (isAnimating ? "progress-circle" : "")
   return (
-    <div className="w-48 h-48 flex items-center justify-center">
+    <div className="w-48 h-48 flex items-center justify-center sm:w-32 sm:h-32">
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
         <circle cx={size / 2} cy={size / 2} strokeWidth={5} r={radius} fill="transparent" stroke="grey"/>
         <circle
