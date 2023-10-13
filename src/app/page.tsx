@@ -20,11 +20,11 @@ function Home() {
         <title>Page d`&apos;`accueil Flojfk</title>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-        <meta name="theme-color" content="black-translucent"/>
+        <meta name="theme-color" content="black"/>
       </Head>
       <DataProvider>
         <Header/>
-        <main style={{backgroundImage: "linear-gradient(to right, #434343 0%, black 100%)", background: "-webkit-linear-gradient(to right, #434343 0%, black 100%)"}}>  
+        <main style={{backgroundImage: "linear-gradient(to right, #434343 0%, black 100%)", background: "linear-gradient(to right, #434343 0%, black 100%)"}}>  
             <ParticlesBG/>
             <Banner/>
             <About/>
