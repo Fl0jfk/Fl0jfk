@@ -13,7 +13,6 @@
     "react": "latest",
     "react-card-flip": "latest",
     "react-dom": "latest",
-    "react-particles": "latest",
     "react-tsparticles": "latest",
     "tsparticles": "latest"
   },

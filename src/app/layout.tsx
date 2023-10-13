@@ -1,9 +1,15 @@
 "use client"
 
 import './globals.css';
+import type { Metadata } from 'next';
 import { DataProvider } from './contexts/data';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
+
+export const metadata: Metadata = {
+  title: 'Fl0jfk',
+  description: 'My personal website',
+}
 
 export default function RootLayout({
   children,
