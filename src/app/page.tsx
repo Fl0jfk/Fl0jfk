@@ -18,9 +18,11 @@ function Home() {
     <>
       <Head>
         <title>Page d`&apos;`accueil Flojfk</title>
-        <meta name="theme-color" content="#1F1F20"/>
+        <meta name="color-scheme" content="light dark"/>
+        <meta name="theme-color" content="#1F1F20" media="(prefers-color-scheme: light)"/>
+        <meta name="theme-color" content="#1F1F20" media="(prefers-color-scheme: dark)"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="#1F1F20"/>
       </Head>
       <DataProvider>
         <Header/>
