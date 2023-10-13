@@ -23,7 +23,7 @@ function Home() {
       </Head>
       <DataProvider>
         <Header/>
-        <main>  
+        <main style={{backgroundImage: "linear-gradient(to right, #434343 0%, black 100%)", background: "-webkit-linear-gradient(to right, #434343 0%, black 100%)"}}>  
             <ParticlesBG/>
             <Banner/>
             <About/>
