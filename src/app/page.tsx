@@ -18,8 +18,8 @@ function Home() {
     <>
       <Head>
         <title>Page d`&apos;`accueil Flojfk</title>
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
-        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
         <meta name="theme-color" content="black-translucent"/>
       </Head>
       <DataProvider>
