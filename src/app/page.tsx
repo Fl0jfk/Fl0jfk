@@ -20,7 +20,7 @@ function Home() {
         <title>Page d`&apos;`accueil Flojfk</title>
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
         <meta name="apple-mobile-web-app-capable" content="yes"></meta>
-        <meta name="theme-color" content="green"/>
+        <meta name="theme-color" content="black-translucent"/>
       </Head>
       <DataProvider>
         <Header/>
