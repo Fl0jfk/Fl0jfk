@@ -18,7 +18,7 @@ function Home() {
     <>
       <Head>
         <title>Page d`&apos;`accueil Flojfk</title>
-        <meta name="theme-color" content="black"/>
+        <meta name="theme-color" content="#1F1F20"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
       </Head>
