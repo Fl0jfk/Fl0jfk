@@ -13,13 +13,13 @@ function Header(){
         setMenuOpened(!menuOpened)
     }
     return (
-        <header className="flex grow gap-2 p-4 justify-between">
+        <header className="flex p-4 justify-between w-full">
             <div className='w-2/12 h-[40]'>
                 {data.profile.memoji && 
                     <Image src={data.profile.memoji} alt='Mon memoji' width={150} height={150}/>
                 }
             </div>
-            <div className='w-10/12 sm:flex sm:justify-end md:flex md:justify-end'>
+            <div className='w-10/12 flex justify-end items-center'>
                 <Navbar menuOpened={menuOpened}/>
                 <div className='flex justify-end w-[40] h-[40] items-center' onClick={() => handleClick()}>
                     <CrossButton/>
