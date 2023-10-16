@@ -11,7 +11,7 @@ import Contact from './components/contact/Contact';
 import ParticlesBG from './components/particles/Particles';
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import { DataProvider } from './contexts/data';
+import { DataProvider } from "./contexts/data";
 
 function Home() {
   return (

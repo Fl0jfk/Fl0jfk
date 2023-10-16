@@ -32,7 +32,7 @@ function CircleBar({ level, isAnimating }: CircleBarProps) {
           strokeLinejoin="round"
           className={playAnimation}
         />
-        <text x="50%" y="50%" dy="0.3em" textAnchor="middle" className="text-grey">
+        <text x="50%" y="50%" dy="0.3em" textAnchor="middle" className="text-grey sm:text-xl md:text-xl">
           {level}%
         </text>
       </svg>

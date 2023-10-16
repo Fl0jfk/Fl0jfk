@@ -91,6 +91,18 @@
             "name": "Redux ToolKit",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/redux.svg",
             "level": 50  
+        },
+        {
+            "id": 15,
+            "name": "WordPress",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/wordpress.svg",
+            "level": 60
+        },
+        {
+            "id": 16,
+            "name": "Notion",
+            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/notion.svg",
+            "level": 30
         }
     ],
     "projects": [
@@ -243,6 +255,16 @@
             "techs": "React Redux Toolkit",
             "github": "https://github.com/Fl0jfk/OC-ArgentBank",
             "website": ""
+        },
+        {
+            "id":16,
+            "name": "Karine-Beauté-Zen",
+            "category": "Web",
+            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Karine-Beaute%CC%81-Zen.png",
+            "description": "",
+            "techs": "Wordpress Beaver Builder WooCommerce",
+            "github": "",
+            "website": "https://karine-beaute-zen.com"
         }
     ],
     "mockups" :[
@@ -255,6 +277,47 @@
             "id":2,
             "name": "iPhone",
             "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/mockups/apple-iphone-15-pro-max-2023-medium.png"
+        }
+    ],
+    "experiences" : [
+
+    ],
+    "testimonials" : [
+        {
+            "id": 1,
+            "author": "Kévin Trillon",
+            "photoAuthor": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/testimonials/KT-NB-160x160.jpg",
+            "testimonial": "J'ai été recruté par Florian en tant qu'adjoint et on a fait équipe pendant presque cinq années, un lien professionnel et amical c'est créé, aujourd'hui nous nous formons tous les deux pour devenir développeur informatique car nous avons un attrait pour ce domaine depuis toujours sans jamais tenter notre chance. C'est maintenant chose faite."
+        },
+        {
+            "id": 2,
+            "author": "Test",
+            "photoAuthor": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/testimonials/KT-NB-160x160.jpg",
+            "testimonial": "J'ai été recruté par Florian en tant qu'adjoint et on a fait équipe pendant presque cinq années, un lien professionnel et amical c'est créé, aujourd'hui nous nous formons tous les deux pour devenir développeur informatique car nous avons un attrait pour ce domaine depuis toujours sans jamais tenter notre chance. C'est maintenant chose faite."
+        },
+        {
+            "id": 3,
+            "author": "Test1",
+            "photoAuthor": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/testimonials/KT-NB-160x160.jpg",
+            "testimonial": "J'ai été recruté par Florian en tant qu'adjoint et on a fait équipe pendant presque cinq années, un lien professionnel et amical c'est créé, aujourd'hui nous nous formons tous les deux pour devenir développeur informatique car nous avons un attrait pour ce domaine depuis toujours sans jamais tenter notre chance. C'est maintenant chose faite."
+        },
+        {
+            "id": 4,
+            "author": "Test2",
+            "photoAuthor": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/testimonials/KT-NB-160x160.jpg",
+            "testimonial": "J'ai été recruté par Florian en tant qu'adjoint et on a fait équipe pendant presque cinq années, un lien professionnel et amical c'est créé, aujourd'hui nous nous formons tous les deux pour devenir développeur informatique car nous avons un attrait pour ce domaine depuis toujours sans jamais tenter notre chance. C'est maintenant chose faite."
+        }
+    ],
+    "others" : [
+        {
+            "id": 1,
+            "name": "ArrowLeft",
+            "src": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/others/arrow-left.svg"
+        },
+        {
+            "id": 2,
+            "name": "ArrowRight",
+            "src": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/others/arrow-right.svg"
         }
     ]
 }

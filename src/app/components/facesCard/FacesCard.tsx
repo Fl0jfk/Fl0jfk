@@ -23,9 +23,9 @@ export function FrontCard ({whatCard, svg, name, mockupSrc, category, projectImg
     } else if (whatCard === "project"){
         return (
             <div className="bg-grey flex flex-col rounded-lg items-center justify-center wrap gap-4 hover:bg-green cursor-pointer w-72 h-72 hover:text-grey">
-                { mockupAlt && mockupSrc && <Image src={mockupSrc} alt={mockupAlt} width={category === "Web" ? "230" :"100"} height={category === "Web" ? "230" : "80"}/>}
+                { mockupAlt && mockupSrc && <Image src={mockupSrc} alt={mockupAlt} width={category === "Web" ? "230" :"100"} height={category === "Web" ? "230" : "80"} className="z-10"/>}
                 <div className={category === "Web" ? "absolute mb-28" : "absolute mb-10 rounded"} style={category === "Web" ? sizeContainerImageWeb : sizeContainerImageMobile}>
-                    { projectImg && <Image src={projectImg} alt={`Image du site : ${name}`} fill={true} style={{objectFit: "fill"}} className={category === "Web" ? "" : "rounded-md" } sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>}
+                    { projectImg && <Image src={projectImg} alt={`Image du site : ${name}`} fill={true} style={{objectFit: "fill"}} className={category === "Web" ? "" : "rounded-md" } sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" quality={50}/>}
                 </div>
                 <h3 className="text-xl hover:text-grey">{name}</h3>
             </div>

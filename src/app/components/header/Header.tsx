@@ -3,7 +3,7 @@
 import Navbar from '../navbar/Navbar';
 import { useState } from 'react';
 import Image from 'next/image';
-import { useData } from '@/app/contexts/data';
+import { useData } from '../../contexts/data';
 import CrossButton from '../buttons/CrossButton';
 
 function Header(){
@@ -13,7 +13,7 @@ function Header(){
         setMenuOpened(!menuOpened)
     }
     return (
-        <header className="flex p-4 justify-between w-full" style={{backgroundImage: "linear-gradient(to right, #434343 0%, black 100%)", background: "linear-gradient(to right, #434343 0%, black 100%)"}}>
+        <header className="flex p-4 justify-between w-full">
             <div className='w-2/12 h-[40]'>
                 {data.profile.memoji && 
                     <Image src={data.profile.memoji} alt='Mon memoji' width={150} height={150}/>

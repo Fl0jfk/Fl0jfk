@@ -34,11 +34,31 @@ type Mockup = {
   img: string;
 };
 
+type Experience = {
+
+};
+
+type Testimonial = {
+  id: number;
+  author: string;
+  photoAuthor: string;
+  testimonial: string;
+};
+
+type Other = {
+  id: number;
+  name: string;
+  src: string;
+}
+
 type Data = {
   profile: Profile;
   skills: Skill[];
   projects: Project[];
   mockups: Mockup[];
+  experiences: Experience[];
+  testimonials: Testimonial[];
+  others: Other[];
   error: Error | null;
 };
 
@@ -53,6 +73,9 @@ const initialData: Data = {
   skills: [],
   projects: [],
   mockups: [],
+  experiences: [],
+  testimonials: [],
+  others: [],
   error: null
 };
 
