@@ -41,6 +41,7 @@ type Experience = {
 type Testimonial = {
   id: number;
   author: string;
+  job: string;
   photoAuthor: string;
   testimonial: string;
 };

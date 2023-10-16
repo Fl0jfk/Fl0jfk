@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description: 'My personal website',
   themeColor: "black-translucent",
   appleWebApp: true,
+  viewport: "width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"
 }
 
 export default function RootLayout({
