@@ -3,16 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "../buttons/Button";
 
-
 export function FrontCard ({whatCard, svg, name, mockupSrc, category, projectImg, mockupAlt} : FrontCardProps){
-    const sizeContainerImageWeb ={
-        'width' : '220px',
-        'height' : '130px'
-    }
-    const sizeContainerImageMobile ={
-        'width' : '90px',
-        'height' : '200px'
-    }   
+    const sizeContainerImageWeb ={width :'220px', height :'130px'}
+    const sizeContainerImageMobile ={width :'90px', height :'200px'}   
     if(whatCard === "skill") {
         return (
             <div  className="bg-grey bg-opacity-70 flex flex-col rounded-lg items-center py-14 px-4 gap-5 hover:bg-green cursor-pointer w-52 h-52 justify-center hover:text-grey sm:px2 sm:py4 sm:h-40 sm:w-40">
@@ -44,8 +37,8 @@ export function BackCard({whatCard, name, level, isAnimating, projectDesc, siteL
     } else if (whatCard === "project")
     return (
         <div className="bg-green flex flex-col rounded-lg items-center py-2 px-4 gap-1 justify-center cursor-pointer w-72 h-72 text-grey">
-            <h3 className="text-4xl text-center text-grey">{name}</h3>
-            <p className="text-2xl text-center text-grey">{projectDesc}</p>
+            <h3 className="text-2xl text-center text-grey">{name}</h3>
+            <p className="text-xl text-center text-grey">{projectDesc}</p>
             {githubLink &&  <Link href={githubLink}>
                                 <svg width="50px" height="50px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                     <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -65,9 +58,9 @@ export function BackCard({whatCard, name, level, isAnimating, projectDesc, siteL
 }
 
 type FrontCardProps = {
-    whatCard: string,
+    whatCard?: string,
     svg?: string,
-    name: string,
+    name?: string,
     mockupSrc?: string,
     mockupAlt?: string,
     category? :string,
