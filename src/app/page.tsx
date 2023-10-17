@@ -21,7 +21,7 @@ function Home() {
       </Head>
       <DataProvider>
         <Header/>
-        <main style={{backgroundImage: "linear-gradient(to right, #434343 0%, black 100%)", background: "linear-gradient(to right, #434343 0%, black 100%)"}}>  
+        <main>  
             <ParticlesBG/>
             <Banner/>
             <About/>
