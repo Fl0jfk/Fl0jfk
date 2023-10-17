@@ -1,7 +1,7 @@
 function About (){
     return (
         <section id="about"className="p-4 flex items-center justify-center mt-12 sm:mt-0">
-            <div className="bg-grey rounded-xl p-4">
+            <div className="bg-grey rounded-xl p-16 md:p-8 sm:p-8">
                 <p className="text-xl">
                     Hello, I&apos;m <span className="text-green text-2xl">Florian</span>, a 30-year-old programming enthusiast from Rouen, on a journey to become a junior front-end developer.<br/><br/>
                     While I lack professional experience, I&apos;m a dedicated learner.<br/>
