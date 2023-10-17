@@ -8,7 +8,7 @@ function CrossButton(){
     const clickOnButton = () => {
         setButtonGo(!buttonGo);
     } 
-    const hambOrCross = (buttonGo ? "menu ": "menu opened fixed z-40");
+    const hambOrCross = (buttonGo ? "menu ": "menu opened fixed z-[10]");
     return (
         <button className={`${hambOrCross} md:flex sm:flex lg:hidden xl:hidden`} onClick={clickOnButton}>
             <svg width="40" height="40" viewBox="0 0 100 100">

@@ -10,7 +10,7 @@ function Slider({ props }: SliderProps) {
     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
   return (
     <div ref={targetRef} className="relative h-[300vh]">
-        <div className="sticky top-0 flex h-screen items-center overflow-hidden" style={{marginTop: "-250px"}}>
+        <div className="sticky top-0 flex h-screen items-center overflow-hidden mt-[-250px] sm:mt-[-150px]">
           <motion.div style={{ x }} className="flex gap-4">
             {props.map((testimonial) => {
               return <Slide author={testimonial.author} key={testimonial.id} job={testimonial.job} photoAuthor={testimonial.photoAuthor} testimonial={testimonial.testimonial}/>;

@@ -8,7 +8,7 @@ function Banner() {
   const  data  = useData();
   if (data) {
     return (
-        <section className="px-24 pt-4 xl:pt-16 flex justify-center items-end md:px-12 sm:px-8">
+        <section className="px-24 pt-4 xl:pt-16 flex justify-center items-end md:px-12 sm:px-8 md:mt-[100px] sm:mt-[100px]">
           <div className="flex max-w-6xl wrap items-stretch">
             <div className="flex flex-col gap-4 justify-center items-start mb-4 sm:items-center">
               <div className="flex gap-3 items-start sm:items-center">
@@ -19,7 +19,7 @@ function Banner() {
               <Button text="Contact Me" full={false} link="#contact"/>
             </div>
             <div className="flex items-end">
-              { data.profile.profilePhoto &&<Image id="bannerImage" src={data.profile.profilePhoto} alt="My profile photo" width={500} height={500} className="rounded-full opacity-80 sm:hidden"/>}
+              { data.profile.profilePhoto &&<Image id="bannerImage" src={data.profile.profilePhoto} alt="My profile photo" width={500} height={500} className="rounded-full opacity-80 sm:hidden md:hidden z-0"/>}
             </div>
           </div>
         </section>
