@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Fl0jfk',
   description: 'My personal website',
-  themeColor: "black-translucent",
+  themeColor: "linear-gradient(to right, #434343 0%, black 100%)",
   appleWebApp: true,
   viewport: "width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"
 }

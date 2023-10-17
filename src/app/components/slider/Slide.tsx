@@ -1,27 +1,26 @@
 import Image from 'next/image';
 import { useData } from '@/app/contexts/data';
 
+
 function Slide({author, job, photoAuthor, testimonial}:SliderProps){
-  const quotes = useData().others[1].src;
-  return (
-    <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[370px] mx-auto my-0 bg-grey hover:bg-green cursor-pointer">
-      <Image src={quotes} alt="double_quotes" className="w-[42.6px] h-[27.6px] object-contain" width={42} height={27}/>
-      <p className="font-normal text-[18px] leading-[32.4px] text-white my-10">
-        {testimonial}
-      </p>
-      <div className="flex flex-row">
-        <Image src={photoAuthor} alt={author} className="rounded-full" width={100} height={100} />
-        <div className="flex flex-col ml-4">
-          <h4 className="font-semibold text-[20px] leading-[32px] text-white">
-            {author}
-          </h4>
-          <p className="font-normal text-[16px] leading-[24px] text-dimWhite">
-            {job}
-          </p>
-        </div>
-      </div>
-    </div>
-);
+    const quotes = useData().others[1].src;
+    return (
+            <div className='w-[450px] rounded-xl bg-grey flex flex-col justify-center items-center p-4 gap-4 cursor-pointer hover:bg-green'>
+              {author && 
+              <>           
+                <div className='flex items-center gap-4'>
+                    {photoAuthor &&<Image className='pointer-events-none rounded-full' src={photoAuthor} width={100} height={100} alt={`Photo de ${author}`}/>}
+                    <h3 className='text-2xl'>{author}</h3>
+                    <p className='text-2xl'>{job}</p>
+                </div>
+                <div>
+                  <Image className='pointer-events-none' src={quotes} width={30} height={30} alt='quotes'/>
+                  <p className='text-xl'>{testimonial}</p>
+                </div>
+              </>
+              }  
+            </div> 
+    )
 }
 
 type SliderProps = {

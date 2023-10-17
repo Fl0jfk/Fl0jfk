@@ -6,3 +6,20 @@
     font-family: 'San Francisco';
     src: url("./assets/fonts/San Francisco/pro/SF-Pro-Display-Regular.otf");
 }
+
+body {
+    background: "linear-gradient(to right, #434343 0%, black 100%)";
+    --webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-overflow-scrolling: touch;
+    margin:0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing:border-box;
+}

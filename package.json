@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^10.16.4",
     "next": "latest",
-    "nuka-carousel": "latest",
     "react": "latest",
     "react-card-flip": "latest",
     "react-dom": "latest",
