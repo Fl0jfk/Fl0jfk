@@ -1,7 +1,7 @@
 "use client"
 
 import Navbar from '../navbar/Navbar';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { useData } from '../../contexts/data';
 import CrossButton from '../buttons/CrossButton';
