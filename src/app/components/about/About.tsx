@@ -5,10 +5,10 @@ function About (){
         <section id="about"className="p-4 flex items-center justify-center mt-12 sm:mt-0">
             <motion.div 
                 className="bg-grey rounded-xl p-16 md:p-8 sm:p-8 text-xl cursor-pointer z-1 relative overflow-hidden"
-                variants={{ hover: { scale:1.05}}}
+                variants={{ hover: { scale:1.08, marginTop: "10px", marginBottom: "10px"}}}
                 transition={{duration: 1, ease:"backInOut"}}
                 whileHover="hover">
-                    <div className="relative z-10 ">
+                    <div className="relative z-[2]">
                     <motion.p
                         variants={{hover: {scale:1}}}
                         initial={{scale:0.9}}

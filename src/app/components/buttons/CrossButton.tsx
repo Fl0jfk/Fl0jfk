@@ -1,14 +1,19 @@
 "use client"
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './crossbutton.css';
 
-function CrossButton(){
+function CrossButton({menuOpened}: CrossButton ){
     const [buttonGo, setButtonGo ] = useState(true);
     const clickOnButton = () => {
         setButtonGo(!buttonGo);
-    } 
+    }
     const hambOrCross = (buttonGo ? "menu ": "menu opened fixed z-[10]");
+    useEffect(() => {
+        if(menuOpened === false){
+            setButtonGo(true)
+        }
+    }, [menuOpened])
     return (
         <button className={`${hambOrCross} md:flex sm:flex lg:hidden xl:hidden`} onClick={clickOnButton}>
             <svg width="40" height="40" viewBox="0 0 100 100">
@@ -18,6 +23,10 @@ function CrossButton(){
             </svg>
         </button>
     )
+}
+
+type CrossButton = {
+    menuOpened: boolean
 }
 
 export default CrossButton;
