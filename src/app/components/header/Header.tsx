@@ -13,7 +13,7 @@ function Header(){
         setMenuOpened(!menuOpened)
     }
     return (
-        <header className="flex p-4 justify-between w-full md:fixed sm:fixed z-[8] md:mb-[100px] sm:opacity-90 md:opacity-90" style={{background: "linear-gradient(to right, #434343 0%, black 100%)"}}>
+        <header className="flex p-4 justify-between w-full md:fixed sm:fixed z-[8] md:mb-[100px] sm:opacity-90 md:opacity-90" style={{background: "linear-gradient(to right, #404040 0%, black 100%)"}}>
             <div className='w-2/12 h-[100px] md:h-[50px] sm:h-[50px] flex items-center pt-4'>
                 {data.profile.memoji && 
                     <Image src={data.profile.memoji} alt='Mon memoji' width={150} height={150} className='cursor-pointer'/>
