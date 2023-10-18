@@ -1,7 +1,7 @@
 "use client"
 
 import Navbar from '../navbar/Navbar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useData } from '../../contexts/data';
 import CrossButton from '../buttons/CrossButton';
@@ -27,6 +27,10 @@ function Header(){
     const handleClickAway = () => {
         setMenuOpened(false)
     }
+    const handleLinkClick = ({ clickOnLink } : handleLinkClickProps) => {
+        setMenuOpened(clickOnLink);
+    };
+
     return (
         <ClickAwayListener onClickAway={() => {handleClickAway()}}>
             <motion.header 
@@ -40,7 +44,7 @@ function Header(){
                         }
                     </div>
                     <div className='w-10/12 flex justify-end items-stretch sm:mt-[-5px]'>
-                        <Navbar menuOpened={menuOpened}/>
+                        <Navbar menuOpened={menuOpened} onLinkClick={handleLinkClick} />
                         <div className='flex justify-end w-[40] h-[100px] md:h-[50px] sm:h-[30px] items-stretch' onClick={() => handleClick()}>
                             <CrossButton menuOpened={menuOpened}/>
                         </div>
@@ -48,6 +52,11 @@ function Header(){
             </motion.header>
         </ClickAwayListener>
     )
+}
+
+type handleLinkClickProps = {
+    clickOnLink : boolean;
+    onLinkClick: (clickOnLink: boolean) => void;
 }
 
 export default Header;

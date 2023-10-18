@@ -11,7 +11,7 @@ function CrossButton({menuOpened}: CrossButton ){
     const hambOrCross = (buttonGo ? "menu ": "menu opened fixed z-[10]");
     useEffect(() => {
         if(menuOpened === false){
-            setButtonGo(true)
+            setButtonGo(true);
         }
     }, [menuOpened])
     return (

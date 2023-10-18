@@ -2,10 +2,19 @@
 
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
-function Navbar({menuOpened} :NavbarProps ){
-    const menuOpen = (menuOpened ? "" : "hidden");
-    const bgMenuOpen = (menuOpened ? "linear-gradient(to top, #404040 0%, black 100%)" : ""  );
+function Navbar({menuOpened, onLinkClick} :NavbarProps ){
+    const [clickOnLink, setClickOnLink] = useState(menuOpened);
+    const menuOpen = (clickOnLink ? "" : "hidden");
+    const bgMenuOpen = (clickOnLink ? "linear-gradient(to top, #404040 0%, black 100%)" : ""  );
+    const handleLinkClick = () => {
+        setClickOnLink(false);
+        onLinkClick({ clickOnLink: false });
+    };
+    useEffect(() => {
+        setClickOnLink(menuOpened)
+    }, [menuOpened])
     return (
         <>
         <AnimatePresence>
@@ -16,10 +25,10 @@ function Navbar({menuOpened} :NavbarProps ){
                 animate={{translateY: "0%", transition:{duration: 0.5, ease: "easeInOut"}}}
                 exit={{translateY:"-100%", transition:{duration: 0.5, ease: "easeInOut"}}}
                 >
-                <Link className='hover:text-green hover:scale-110' href="#about">About</Link>
-                <Link className='hover:text-green hover:scale-110' href="#skills">Skills</Link>
-                <Link className='hover:text-green hover:scale-110' href="#portfolio">Portfolio</Link>
-                <Link className='hover:text-green hover:scale-110' href="#contact">Contact</Link>
+                <Link className='hover:text-green hover:scale-110' href="#about" onClick={handleLinkClick}>About</Link>
+                <Link className='hover:text-green hover:scale-110' href="#skills" onClick={handleLinkClick}>Skills</Link>
+                <Link className='hover:text-green hover:scale-110' href="#portfolio" onClick={handleLinkClick}>Portfolio</Link>
+                <Link className='hover:text-green hover:scale-110' href="#contact" onClick={() => setClickOnLink(false)}>Contact</Link>
             </motion.nav>
             }
         </AnimatePresence>
@@ -34,7 +43,8 @@ function Navbar({menuOpened} :NavbarProps ){
 }
 
 type NavbarProps = {
-    menuOpened: boolean
+    menuOpened: boolean;
+    onLinkClick: any;
 }
 
 export default Navbar;
