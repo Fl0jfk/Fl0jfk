@@ -39,16 +39,16 @@ function CircleBar({ level, isAnimating }: CircleBarProps) {
       <style>
         {`
         .progress-circle {
-          animation: circleProgressAnimation 1s ease-in-out forwards;
+          animation: circleProgressAnimation 0.7s ease-in-out forwards;
           --dash-array: ${dashArray};
           --dash-offset: ${dashOffset};
         }
         @keyframes circleProgressAnimation {
-            from {
+            0% {
               stroke-dashoffset: var(--dash-array);
             }
-            to {
-              stroke-dashoffset: var(--dash-offset+150);
+            100% {
+              stroke-dashoffset: var(--dash-offset+149.99);
             }
           }
         `}

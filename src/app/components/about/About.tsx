@@ -6,13 +6,13 @@ function About (){
             <motion.div 
                 className="bg-grey rounded-xl p-16 md:p-8 sm:p-8 text-xl cursor-pointer z-1 relative overflow-hidden"
                 variants={{ hover: { scale:1.08, marginTop: "10px", marginBottom: "10px"}}}
-                transition={{duration: 1, ease:"backInOut"}}
-                whileHover="hover">
+                transition={{duration: 1, ease:"backInOut",  delay: 0.5}}
+                whileInView="hover">
                     <div className="relative z-[2]">
                     <motion.p
                         variants={{hover: {scale:1}}}
                         initial={{scale:0.9}}
-                        transition={{duration: 1, ease:"backInOut", delay: 0.1}}>
+                        transition={{duration: 1, ease:"backInOut", delay: 0.5}}>
                             Hello, I&apos;m <span className="text-green text-2xl">Florian</span>, a 30-year-old programming enthusiast from Rouen, on a journey to become a junior front-end developer.<br/>
                             While I lack professional experience, I&apos;m a dedicated learner.<br/><br/>
                             My passion lies in creating exceptional user experiences, and I&apos;m proficient in HTML, CSS, and JavaScript, always staying updated with the latest technologies and trends.<br/><br/> 
@@ -38,7 +38,7 @@ function Background (){
             xmlns="http://www.w3.org/2000/svg"
             className="absolute inset-0 z-0"
             variants={{hover: {scale:1.5}}}
-            transition={{duration: 1, ease:"backInOut"}}
+            transition={{duration: 1, ease:"backInOut",  delay: 0.5}}
         >
             <motion.circle 
                 cx={160.5} 
@@ -46,7 +46,7 @@ function Background (){
                 r={201.5} 
                 fill="#30374a"
                 variants={{hover: {scaleY:0.5, y:-25}}}
-                transition={{duration: 1, ease:"backInOut"}}
+                transition={{duration: 1, ease:"backInOut",  delay: 0.5}}
             />
             <motion.ellipse 
                 cx={160.5} 
@@ -55,7 +55,7 @@ function Background (){
                 ry={103.5} 
                 fill="#30374a"
                 variants={{hover: {scaleY:2.25, y:-25}}}
-                transition={{duration: 1, ease:"backInOut", delay: 1}}
+                transition={{duration: 1, ease:"backInOut", delay: 1.5}}
             />
         </motion.svg>
     )

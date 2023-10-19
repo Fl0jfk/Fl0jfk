@@ -7,6 +7,19 @@
     src: url("./assets/fonts/San Francisco/pro/SF-Pro-Display-Regular.otf");
 }
 
+.flip-card-front {
+    backface-visibility: hidden;
+}
+
+.flip-card-front,
+.flip-card-back {
+    perspective: 1000px;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
 body {
     --webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;

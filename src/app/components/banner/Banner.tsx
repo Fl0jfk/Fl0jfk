@@ -1,6 +1,6 @@
 "use client"
 
-import Button from "../buttons/Button";
+import LinkButton from "../buttons/LinkButton";
 import { useData } from "@/app/contexts/data";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -24,7 +24,7 @@ function Banner() {
                 </motion.h1>
               </div>
               <p className="text-4xl md:text-2xl sm:text-xl">{data.profile.profession}</p>
-              <Button text="Contact Me" full={false} link="#contact"/>
+              <LinkButton text="Contact Me" full={false} link="#contact"/>
             </div>
             <div className="flex items-end">
               { data.profile.profilePhoto &&<Image id="bannerImage" src={data.profile.profilePhoto} alt="My profile photo" width={500} height={500} className="rounded-full opacity-80 sm:hidden md:hidden z-0"/>}

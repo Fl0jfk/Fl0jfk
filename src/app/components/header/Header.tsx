@@ -1,7 +1,7 @@
 "use client"
 
 import Navbar from '../navbar/Navbar';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { useData } from '../../contexts/data';
 import CrossButton from '../buttons/CrossButton';
@@ -30,7 +30,6 @@ function Header(){
     const handleLinkClick = ({ clickOnLink } : handleLinkClickProps) => {
         setMenuOpened(clickOnLink);
     };
-
     return (
         <ClickAwayListener onClickAway={() => {handleClickAway()}}>
             <motion.header 
@@ -40,7 +39,7 @@ function Header(){
                 className="flex p-4 justify-between w-full md:fixed sm:fixed z-[8] md:mb-[100px] sm:opacity-80 md:opacity-80 bg-[#000000]">
                     <div className='w-2/12 h-[100px] md:h-[50px] sm:h-[30px] flex items-center pt-4'>
                         {data.profile.memoji && 
-                            <Image src={data.profile.memoji} alt='Mon memoji' width={100} height={100} className='cursor-pointer'/>
+                            <Image src={data.profile.memoji} alt='Mon memoji' width={100} height={100} className='cursor-pointer' onClick={()=>{window.scrollTo({top:0, left:0, behavior:'smooth'})}}/>
                         }
                     </div>
                     <div className='w-10/12 flex justify-end items-stretch sm:mt-[-5px]'>
