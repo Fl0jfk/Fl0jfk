@@ -35,7 +35,7 @@ function Card ({whatCard, svg, name, mockupSrc, category, projectImg, mockupAlt,
     } else if (whatCard === "project"){
         return (
             <motion.div layout className="flip-card-inner" animate={{opacity:1, rotateY: isFlipped ? 180 : 360}} transition={{duration: 0.3, animationDirection: "normal"}} initial={false} exit={{opacity:0}} onClick={handleFlip} onAnimationComplete={()=> setIsAnimating(false)}>
-                <div className={`flip-card-front flex-col rounded-lg items-center justify-center wrap gap-4 border-[1px] border-[#6A6A6A] cursor-pointer w-72 h-72 ${whatFace ? "hidden" : "flex"}`}>
+                <div className={`flip-card-front gradient-card flex-col rounded-lg items-center justify-center wrap gap-4 cursor-pointer w-72 h-72 ${whatFace ? "hidden" : "flex"}`}>
                     { mockupAlt && mockupSrc && <Image src={mockupSrc} alt={mockupAlt} width={category === "Web" ? "230" :"100"} height={category === "Web" ? "230" : "80"} className="z-10"/>}
                     <div className={category === "Web" ? "absolute mb-28" : "absolute mb-10 rounded"} style={category === "Web" ? sizeContainerImageWeb : sizeContainerImageMobile}>
                         { projectImg && <Image src={projectImg} alt={`Image du site : ${name}`} fill={true} style={{objectFit: "fill"}} className={category === "Web" ? "" : "rounded-md" } sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" quality={50}/>}

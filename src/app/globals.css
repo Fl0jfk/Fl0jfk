@@ -32,7 +32,7 @@ body {
 }
 
 .gradient-card {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 }
 
 .gradient-text {
