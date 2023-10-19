@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 
 function About (){
     return (
-        <section id="about"className="p-4 flex items-center justify-center mt-12 sm:mt-0">
+        <section id="about"className="p-4 flex flex-col items-center justify-center mt-12 sm:mt-0">
+            <h2 className='text-7xl mb-10 md:text-5xl sm:text-4xl'>About</h2>
             <motion.div 
                 className="bg-grey rounded-xl p-16 md:p-8 sm:p-8 text-xl cursor-pointer z-1 relative overflow-hidden"
                 variants={{ hover: { scale:1.08, marginTop: "10px", marginBottom: "10px"}}}

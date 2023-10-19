@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'San Francisco';
-    src: url("./assets/fonts/San Francisco/pro/SF-Pro-Display-Regular.otf");
-}
-
 .flip-card-front {
     backface-visibility: hidden;
 }

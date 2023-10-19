@@ -12,6 +12,9 @@ import ParticlesBG from './components/particles/Particles';
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import { DataProvider } from "./contexts/data";
+import SanFrancisco from 'next/font/local';
+
+const SanFr = SanFrancisco({ src: "./assets/fonts/San Francisco/pro/SF-Pro-Display-Regular.otf"})
 
 function Home() {
   return (
@@ -21,7 +24,7 @@ function Home() {
       </Head>
       <DataProvider>
         <Header/>
-        <main>  
+        <main className={SanFr.className}>  
             <ParticlesBG/>
             <Banner/>
             <About/>

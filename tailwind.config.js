@@ -12,9 +12,6 @@ module.exports = {
       'black': '#06142b',
       'purple': '#694af6'
     },
-    fontFamily: {
-      'sans' : ['San Francisco', 'Arial', 'sans-serif']
-    },
     screens: {
       'sm': {'min': '350px', 'max': '767px'},
       'md': {'min': '768px', 'max': '991px'},
