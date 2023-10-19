@@ -25,18 +25,18 @@ function Navbar({menuOpened, onLinkClick} :NavbarProps ){
                 animate={{translateY: "0%", transition:{duration: 0.5, ease: "easeInOut"}}}
                 exit={{translateY:"-100%", transition:{duration: 0.5, ease: "easeInOut"}}}
                 >
-                <Link className='hover:text-green hover:scale-110' href="#about" onClick={handleLinkClick}>About</Link>
-                <Link className='hover:text-green hover:scale-110' href="#skills" onClick={handleLinkClick}>Skills</Link>
-                <Link className='hover:text-green hover:scale-110' href="#portfolio" onClick={handleLinkClick}>Portfolio</Link>
-                <Link className='hover:text-green hover:scale-110' href="#contact" onClick={() => setClickOnLink(false)}>Contact</Link>
+                <Link className='hover:scale-110' href="#about" onClick={handleLinkClick}>About</Link>
+                <Link className='hover:scale-110' href="#skills" onClick={handleLinkClick}>Skills</Link>
+                <Link className='hover:scale-110' href="#portfolio" onClick={handleLinkClick}>Portfolio</Link>
+                <Link className='hover:scale-110' href="#contact" onClick={() => setClickOnLink(false)}>Contact</Link>
             </motion.nav>
             }
         </AnimatePresence>
-        <nav style={{background: `${bgMenuOpen}`}} className={`flex gap-6 text-2xl xl:mr-8 lg:mr-8 sm:hidden md:hidden`}>
-            <Link className='hover:text-green hover:scale-110' href="#about">About</Link>
-            <Link className='hover:text-green hover:scale-110' href="#skills">Skills</Link>
-            <Link className='hover:text-green hover:scale-110' href="#portfolio">Portfolio</Link>
-            <Link className='hover:text-green hover:scale-110' href="#contact">Contact</Link>
+        <nav style={{background: `${bgMenuOpen}`}} className={`flex gap-6 text-2xl xl:mr-8 lg:mr-8 sm:hidden md:hidden z-[9]`}>
+            <Link className='hover:scale-110' href="#about">About</Link>
+            <Link className='hover:scale-110' href="#skills">Skills</Link>
+            <Link className='hover:scale-110' href="#portfolio">Portfolio</Link>
+            <Link className='hover:scale-110' href="#contact">Contact</Link>
         </nav>
         </>
     )

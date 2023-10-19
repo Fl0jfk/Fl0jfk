@@ -9,14 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-google-maps/api": "^2.19.2",
-    "framer-motion": "^10.16.4",
+    "@react-google-maps/api": "latest",
+    "framer-motion": "latest",
     "next": "latest",
     "react": "latest",
-    "react-click-away-listener": "^2.2.3",
-    "react-dom": "latest",
-    "react-tsparticles": "latest",
-    "tsparticles": "latest"
+    "react-click-away-listener": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",

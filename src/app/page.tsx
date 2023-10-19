@@ -8,7 +8,6 @@ import Head from 'next/head';
 import Experience from './components/experience/Experience';
 import Testimonial from './components/testimonial/Testimonial';
 import Contact from './components/contact/Contact';
-import ParticlesBG from './components/particles/Particles';
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import { DataProvider } from "./contexts/data";
@@ -25,7 +24,6 @@ function Home() {
       <DataProvider>
         <Header/>
         <main className={SanFr.className}>  
-            <ParticlesBG/>
             <Banner/>
             <About/>
             <Skill/>

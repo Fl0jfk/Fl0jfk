@@ -18,7 +18,7 @@ function Banner() {
                             initial="hidden"
                             animate="visible"
                             transition={{duration: 0.8, delay: 0.5}} 
-                            className="text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-green">
+                            className="text-8xl lg:text-6xl md:text-5xl sm:text-4xl gradient-text">
                               {data.profile.firstname}<br/>
                               {data.profile.lastname}
                 </motion.h1>
