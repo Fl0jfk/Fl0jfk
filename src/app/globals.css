@@ -31,6 +31,10 @@ body {
     box-sizing:border-box;
 }
 
+.gradient-background {
+  background-image: linear-gradient(to top, #434343 0%, black 100%);
+}
+
 .gradient-card {
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 }

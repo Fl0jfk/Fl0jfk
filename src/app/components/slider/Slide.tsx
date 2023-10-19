@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { useData } from '@/app/contexts/data';
 
-
 function Slide({author, job, photoAuthor, testimonial}:SliderProps){
     const quotes = useData().others[1].src;
     return (

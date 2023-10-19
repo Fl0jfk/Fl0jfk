@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-        <body className="flex flex-col w-screen text-white bg-black">  
+        <body className="flex flex-col w-screen text-white gradient-background">  
               {children}
         </body>
     </html>
