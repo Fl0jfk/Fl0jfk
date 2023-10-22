@@ -32,13 +32,13 @@ function Card ({whatCard, svg, name, mockupSrc, category, projectImg, mockupAlt,
     } else if (whatCard === "project"){
         return (
             <motion.div layout className="flip-card-inner" animate={{opacity:1, rotateY: isFlipped ? 180 : 360}} transition={{duration: 0.3, animationDirection: "normal"}} initial={false} exit={{opacity:0}} onClick={handleFlip} onAnimationComplete={()=> setIsAnimating(false)}>
-                <div className={`flip-card-front flex-col rounded-xl p-8 gap-4 cursor-pointer w-[600px] h-[500px] overflow-hidden bg-grey ${whatFace ? "hidden" : "flex"}`}>
+                <div className={`flip-card-front flex-col rounded-xl p-8 gap-4 cursor-pointer w-full h-[500px] overflow-hidden bg-grey ${whatFace ? "hidden" : "flex"}`}>
                     <h3 className="text-4xl text-white relative">{name}</h3>
                     <div className={category === "Web" ? "absolute top-[170px] left-[30px] w-[850px] h-[850px] rounded-md" : "absolute top-[200px] w-[800px] h-[500px]"}>
-                        { projectImg && <Image src={projectImg} alt={`Image du site : ${name}`} width={850} height={850} objectFit="contain"  className="rounded-md"/>}
+                        { projectImg && <Image src={projectImg} alt={`Image du site : ${name}`} width={850} height={850} style={{objectFit: "contain"}}  className="rounded-md"/>}
                     </div> 
                 </div>
-                <div className={`flip-card-back flex-col rounded-xl items-center py-2 px-4 gap-1 justify-center cursor-pointer w-[600px] h-[500px] ${whatFace ? "flex" : "hidden"}`}>
+                <div className={`flip-card-back flex-col rounded-xl items-center py-2 px-4 gap-1 justify-center cursor-pointer w-full h-[500px] ${whatFace ? "flex" : "hidden"}`}>
                     <h3 className="text-2xl text-center">{name}</h3>
                     <p className="text-xl text-center">{projectDesc}</p>
                     <div className="flex items-center gap-4">
