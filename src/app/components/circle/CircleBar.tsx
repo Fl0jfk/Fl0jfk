@@ -17,7 +17,7 @@ function CircleBar({ level, isAnimating }: CircleBarProps) {
   return (
     <div className="w-48 h-48 flex items-center justify-center sm:w-24 sm:h-24">
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
-        <circle cx={size / 2} cy={size / 2} strokeWidth={5} r={radius} fill="transparent" stroke="grey"/>
+        <circle cx={size / 2} cy={size / 2} strokeWidth={5} r={radius} fill="transparent" stroke="white"/>
         <circle
           cx={size / 2}
           cy={size / 2}
@@ -32,7 +32,7 @@ function CircleBar({ level, isAnimating }: CircleBarProps) {
           strokeLinejoin="round"
           className={playAnimation}
         />
-        <text x="50%" y="50%" dy="0.3em" textAnchor="middle" className="text-grey sm:text-xl md:text-xl">
+        <text x="50%" y="40%" dy="1em" textAnchor="middle" className="text-white sm:text-xl md:text-xl">
           {level}%
         </text>
       </svg>

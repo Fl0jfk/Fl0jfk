@@ -1,20 +1,14 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function About (){
     return (
         <section id="about"className="p-4 flex flex-col items-center justify-center mt-12 sm:mt-0">
             <h2 className='text-7xl mb-10 md:text-5xl sm:text-4xl'>About</h2>
-            <div className="rounded-xl p-16 md:p-8 sm:p-8 text-xl z-1 relative border-[1px] border-[#6A6A6A]">
-                <p className="text-xl">
-                        Hello, I&apos;m <span className="text-2xl">Florian</span>, a 30-year-old programming enthusiast from Rouen, on a journey to become a junior front-end developer.<br/>
-                        While I lack professional experience, I&apos;m a dedicated learner.<br/><br/>
-                        My passion lies in creating exceptional user experiences, and I&apos;m proficient in HTML, CSS, and JavaScript, always staying updated with the latest technologies and trends.<br/><br/> 
-                        Beyond web development, I thrive on technical challenges, problem-solving, and creativity.<br/>
-                        I&apos;m determined, passionate, and committed to continuous growth, ready to contribute to exciting projects.<br/>
-                        Don&apos;t hesitate to reach out;<br/>
-                        I&apos;m eager to be part of the development community and support innovative projects.
-                    </p>
-                </div>
+            <div className="rounded-xl p-16 md:p-8 sm:p-8 text-xl bg-grey flex flex-col gap-10">
+                <p className="text-4xl">Hello, I&apos;m Florian, a 30-year-old programming enthusiast, on a journey to become a junior front-end developer.<br/></p>
+                <p className="text-xl"> While I lack professional experience, I&apos;m a dedicated learner.</p>
+            </div>
         </section>
     )
 }

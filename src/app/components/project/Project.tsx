@@ -21,7 +21,7 @@ function Project (){
                 <section id="portfolio" className="p-4 flex flex-col justify-center items-center">
                     <h2 className='text-7xl mb-10 md:text-5xl sm:text-4xl'>Portfolio</h2>
                    <FilterButton onChange={(e) => setSelectedCategory(e.target.value)} selectedCategory={selectedCategory}/>
-                    <motion.div className='grid grid-cols-3 gap-2 md:grid-cols-2 sm:grid-cols-1'>
+                    <motion.div className='flex flex-row flex-wrap gap-8 items-center justify-center'>
                         <AnimatePresence>
                             {filterProjectsByCategory().map((project: {id: number, name: string, img: string, category: string, description: string, github: string, website: string, techs: string }) => (
                                 <Card 

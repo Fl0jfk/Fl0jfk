@@ -7,8 +7,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 function Card ({whatCard, svg, name, mockupSrc, category, projectImg, mockupAlt,level , projectDesc, siteLink, githubLink, techs} :CardProps){
-    const sizeContainerImageWeb ={width :'220px', height :'130px'};
-    const sizeContainerImageMobile ={width :'90px', height :'200px'};
     const [isFlipped, setIsFlipped] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
     const [ whatFace, setWhatFace ] = useState(false);
@@ -22,27 +20,25 @@ function Card ({whatCard, svg, name, mockupSrc, category, projectImg, mockupAlt,
     if(whatCard === "skill") {
         return (
             <motion.div layout animate={{opacity:1, rotateY: isFlipped ? 180 : 360}} transition={{duration: 0.3, animationDirection: "normal"}} initial={false} exit={{opacity:0}} onClick={handleFlip} onAnimationComplete={()=> setIsAnimating(false)} className="relative z-[10]">
-                <div className={`flip-card-front flex-col z-[10] rounded-lg items-center py-14 px-4 gap-5 cursor-pointer w-52 h-52 justify-center sm:px2 sm:py4 sm:h-40 sm:w-40 border-[1px] border-[#6A6A6A] ${whatFace ? "hidden" : "flex"}`}>
-                    {svg &&<Image src={svg} alt={`Logo ${name}`} width="70" height="70"/>}
-                    <h3 className="text-xl text-center">{name}</h3>
+                <div className={`flip-card-front flex-col z-[10] rounded-xl items-center py-14 px-4 gap-5 cursor-pointer w-52 h-52 justify-center sm:px2 sm:py4 sm:h-40 sm:w-40 bg-grey ${whatFace ? "hidden" : "flex"}`}>
+                    {svg &&<Image src={svg} alt={`Logo ${name}`} width="70" height="70" className="z-1 relative"/>} 
                 </div> 
-                <div className={`flip-card-back flex-col rounded-lg items-center py-2 px-4 gap-1 justify-center cursor-pointer w-52 h-52 sm:px2 sm:py4 sm:h-40 sm:w-40 border-[1px] border-[#6A6A6A] ${whatFace ? "flex" : "hidden"}`}>
-                    <h3 className="text-xl text-center">{name}</h3>
-                        { level && <CircleBar level={level} isAnimating={isAnimating}/>}
+                <div className={`flip-card-back flex-col rounded-xl items-center py-2 px-4 gap-1 justify-center cursor-pointer w-52 h-52 sm:px2 sm:py4 sm:h-40 sm:w-40 bg-grey ${whatFace ? "flex" : "hidden"}`}>
+                    <h3 className="text-xl text-center z-1 relative">{name}</h3>
+                    {level && <CircleBar level={level} isAnimating={isAnimating}/>}
                 </div> 
             </motion.div>
             )
     } else if (whatCard === "project"){
         return (
             <motion.div layout className="flip-card-inner" animate={{opacity:1, rotateY: isFlipped ? 180 : 360}} transition={{duration: 0.3, animationDirection: "normal"}} initial={false} exit={{opacity:0}} onClick={handleFlip} onAnimationComplete={()=> setIsAnimating(false)}>
-                <div className={`flip-card-front flex-col rounded-lg items-center justify-center wrap gap-4 cursor-pointer w-72 h-72 border-[1px] border-[#6A6A6A] ${whatFace ? "hidden" : "flex"}`}>
-                    { mockupAlt && mockupSrc && <Image src={mockupSrc} alt={mockupAlt} width={category === "Web" ? "230" :"100"} height={category === "Web" ? "230" : "80"} className="z-10"/>}
-                    <div className={category === "Web" ? "absolute mb-28" : "absolute mb-10 rounded"} style={category === "Web" ? sizeContainerImageWeb : sizeContainerImageMobile}>
-                        { projectImg && <Image src={projectImg} alt={`Image du site : ${name}`} fill={true} style={{objectFit: "fill"}} className={category === "Web" ? "" : "rounded-md" } sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" quality={50}/>}
-                    </div>
-                    <h3 className="text-xl">{name}</h3>
+                <div className={`flip-card-front flex-col rounded-xl p-8 gap-4 cursor-pointer w-[600px] h-[500px] overflow-hidden bg-grey ${whatFace ? "hidden" : "flex"}`}>
+                    <h3 className="text-4xl text-white relative">{name}</h3>
+                    <div className={category === "Web" ? "absolute top-[170px] left-[30px] w-[850px] h-[850px] rounded-md" : "absolute top-[200px] w-[800px] h-[500px]"}>
+                        { projectImg && <Image src={projectImg} alt={`Image du site : ${name}`} width={850} height={850} objectFit="contain"  className="rounded-md"/>}
+                    </div> 
                 </div>
-                <div className={`flip-card-back flex-col rounded-lg items-center py-2 px-4 gap-1 justify-center cursor-pointer w-72 h-72 border-[1px] border-[#6A6A6A] ${whatFace ? "flex" : "hidden"}`}>
+                <div className={`flip-card-back flex-col rounded-xl items-center py-2 px-4 gap-1 justify-center cursor-pointer w-[600px] h-[500px] ${whatFace ? "flex" : "hidden"}`}>
                     <h3 className="text-2xl text-center">{name}</h3>
                     <p className="text-xl text-center">{projectDesc}</p>
                     <div className="flex items-center gap-4">
