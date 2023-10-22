@@ -57,3 +57,7 @@ body {
   min-width: 75%;
 }
 
+.menu-opacity {
+  opacity: 1!important;
+}
+

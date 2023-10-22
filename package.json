@@ -13,7 +13,6 @@
     "framer-motion": "latest",
     "next": "latest",
     "react": "latest",
-    "react-click-away-listener": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
