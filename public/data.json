@@ -331,18 +331,11 @@
         },
         {
             "id": 3,
-            "author": "Test1",
-            "job": "",
-            "photoAuthor": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/testimonials/KT-NB-160x160.jpg",
+            "author": "Romain Leuillier",
+            "job": "Lead Blockchain Engineer",
+            "photoAuthor": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/testimonials/Romain+Leuillier.jpeg",
             "testimonial": "J'ai été recruté par Florian en tant qu'adjoint et on a fait équipe pendant presque cinq années, un lien professionnel et amical c'est créé, aujourd'hui nous nous formons tous les deux pour devenir développeur informatique car nous avons un attrait pour ce domaine depuis toujours sans jamais tenter notre chance. C'est maintenant chose faite."
-        },
-        {
-            "id": 4,
-            "author": "Test2",
-            "job": "",
-            "photoAuthor": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/testimonials/KT-NB-160x160.jpg",
-            "testimonial": "J'ai été recruté par Florian en tant qu'adjoint et on a fait équipe pendant presque cinq années, un lien professionnel et amical c'est créé, aujourd'hui nous nous formons tous les deux pour devenir développeur informatique car nous avons un attrait pour ce domaine depuis toujours sans jamais tenter notre chance. C'est maintenant chose faite."
-        }
+        }  
     ],
     "others" : [
         {
