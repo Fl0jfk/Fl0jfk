@@ -9,7 +9,6 @@ function FilterButton({selectedCategory, onChange} : FilterButtonProps){
                 <option value="Mobile">Mobile</option>
             </select>
         </div>
-      
     )
 }
 

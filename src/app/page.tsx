@@ -23,7 +23,7 @@ function Home() {
       </Head>
       <DataProvider>
         <Header/>
-        <main className={SanFr.className}>  
+        <main className={`${SanFr.className} flex flex-col items-center`}>  
             <Banner/>
             <About/>
             <Skill/>

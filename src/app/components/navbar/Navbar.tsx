@@ -35,23 +35,23 @@ function Navbar({menuOpened, onLinkClick} :NavbarProps ){
                     >
                      <div className='w-2/12 h-[100px] md:h-[50px] sm:h-[30px] flex items-center pt-4'>
                         {data.profile.memoji && 
-                        <Link className='hover:scale-110' href={"/"} onClick={handleLinkClick}>
+                        <Link className='hover:scale-110' href={"/"} onClick={handleLinkClick} aria-label="Link to top">
                             <Image src={data.profile.memoji} alt='Mon memoji' width={100} height={100} className='cursor-pointer z-[8]'/>
                         </Link>
                         }
                     </div>
-                    <Link className='hover:scale-110' href="#about" onClick={handleLinkClick}>About</Link>
-                    <Link className='hover:scale-110' href="#skills" onClick={handleLinkClick}>Skills</Link>
-                    <Link className='hover:scale-110' href="#portfolio" onClick={handleLinkClick}>Portfolio</Link>
-                    <Link className='hover:scale-110' href="#contact" onClick={() => setClickOnLink(false)}>Contact</Link>
+                    <Link className='hover:scale-110' href="#about" onClick={handleLinkClick} aria-label="Link to section About">About</Link>
+                    <Link className='hover:scale-110' href="#skills" onClick={handleLinkClick} aria-label="Link to section Skills">Skills</Link>
+                    <Link className='hover:scale-110' href="#portfolio" onClick={handleLinkClick} aria-label="Link to section Portfolio">Portfolio</Link>
+                    <Link className='hover:scale-110' href="#contact" onClick={() => setClickOnLink(false)} aria-label="Link to section Contact">Contact</Link>
                 </motion.nav>
                 }
             </AnimatePresence>
             <nav style={{background: `${bgMenuOpen}`}} className={`flex gap-6 text-2xl xl:mr-8 lg:mr-8 sm:hidden md:hidden z-[9]`}>
-                <Link className='hover:scale-110' href="#about">About</Link>
-                <Link className='hover:scale-110' href="#skills">Skills</Link>
-                <Link className='hover:scale-110' href="#portfolio">Portfolio</Link>
-                <Link className='hover:scale-110' href="#contact">Contact</Link>
+                <Link className='hover:scale-110' href="#about" aria-label="Link to section About">About</Link>
+                <Link className='hover:scale-110' href="#skills" aria-label="Link to section Skills">Skills</Link>
+                <Link className='hover:scale-110' href="#portfolio" aria-label="Link to section Portfolio">Portfolio</Link>
+                <Link className='hover:scale-110' href="#contact" aria-label="Link to section Contact">Contact</Link>
             </nav>
         </>
     )

@@ -15,7 +15,6 @@ function Header(){
     const opacityMenu = (!menuOpened? "sm:opacity-80 md:opacity-80" : "")
     const handleClick = () => {
         setMenuOpened(!menuOpened);
-        
     };
    useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
