@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flip-card-front {
+    backface-visibility: hidden;
+}
+
+.flip-card-front,
+.flip-card-back {
+    perspective: 1000px;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+body {
+    --webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-overflow-scrolling: touch;
+    margin:0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+.gradient-background {
+  background-image: linear-gradient(to top, #434343 0%, black 100%);
+}
+
+.gradient-card {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-item {
+  scroll-snap-align: center;
+  min-width: 75%;
+}
