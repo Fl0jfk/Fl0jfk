@@ -15,7 +15,7 @@ function Slide({author, job, photoAuthor, testimonial, website, linkedin}:Slider
                     </div>
                       <h3 className='xl:text-2xl lg:text-2xl text-xl text-center'>{author}</h3>
                       <p className='xl:text-xl lg:text-xl text-center'>{job}</p>
-                      <div className='flex gap-4 items-center sm:flex-col'>
+                      <div className='flex gap-4 sm:gap-0 md:gap-0 items-center sm:flex-col'>
                           {linkedin&& <Link href={linkedin}>
                                 <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                   <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
