@@ -4,7 +4,7 @@ import { useData } from '@/app/contexts/data';
 function Slide({author, job, photoAuthor, testimonial}:SliderProps){
     const quotes = useData().others[1].src;
     return (
-            <div className='h-[400px] sm:h-[450px] md:h-[350px] gallery-item rounded-xl flex sm:flex-col md:flex-col items-center m-4 p-4 gap-4 cursor-pointer border-[1px] border-[#6A6A6A]'>
+            <div className='min-w-[75%] snap-center h-[400px] sm:h-[450px] md:h-[350px] rounded-xl flex sm:flex-col md:flex-col items-center m-4 p-4 gap-4 cursor-pointer border-[1px] border-[#6A6A6A]'>
               {author && 
               <>           
                 <div className='w-full flex xl:flex-col lg:flex-col items-center justify-center gap-4'>

@@ -21,7 +21,7 @@ function Card ({whatCard, svg, name, category, projectImg, level, shortDescripti
         return (
             <motion.div layout animate={{opacity:1, rotateY: isFlipped ? 180 : 360}} transition={{duration: 0.3, animationDirection: "normal"}} initial={false} exit={{opacity:0}} onClick={handleFlip} onAnimationComplete={()=> setIsAnimating(false)} className="relative z-[10]">
                 <div className={`flip-card-front flex-col z-[10] rounded-xl items-center py-14 px-4 gap-5 cursor-pointer w-52 h-52 justify-center sm:px2 sm:py4 sm:h-40 sm:w-40 bg-grey ${whatFace ? "hidden" : "flex"}`}>
-                    {svg &&<Image src={svg} alt={`Logo ${name}`} width="70" height="70" className="z-1 relative"/>} 
+                    {svg &&<Image src={svg} alt={`Logo ${name}`} width="70" height="70" className="z-1 relative" style={{filter: "drop-shadow(16px 16px 10px black)"}}/>} 
                 </div> 
                 <div className={`flip-card-back flex-col rounded-xl items-center py-2 px-4 gap-1 justify-center cursor-pointer w-52 h-52 sm:px2 sm:py4 sm:h-40 sm:w-40 bg-grey ${whatFace ? "flex" : "hidden"}`}>
                     <h3 className="text-xl text-center z-1 relative">{name}</h3>
