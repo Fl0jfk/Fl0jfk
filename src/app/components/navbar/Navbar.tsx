@@ -33,7 +33,7 @@ function Navbar({menuOpened, onLinkClick} :NavbarProps ){
                     animate={{translateX: "0%", transition:{duration: 0.5, ease: "easeInOut"}}}
                     exit={{translateX:"100%", transition:{duration: 0.5, ease: "easeInOut"}}}
                     >
-                     <div className='w-2/12 h-[100px] md:h-[50px] sm:h-[30px] flex items-center pt-4'>
+                     <div className='w-2/12 h-[100px] md:h-[50px] sm:h-[30px] flex items-center justify-center pt-4'>
                         {data.profile.memoji && 
                         <Link className='hover:scale-110' href={"/"} onClick={handleLinkClick} aria-label="Link to top">
                             <Image src={data.profile.memoji} alt='Mon memoji' width={100} height={100} className='cursor-pointer z-[8]'/>
