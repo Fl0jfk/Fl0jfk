@@ -5,15 +5,17 @@ import { useData } from '@/app/contexts/data';
 function Slide({author, job, photoAuthor, testimonial, website, linkedin}:SliderProps){
     const quotes = useData().others[1].src;
     return (
-            <div className='min-w-[75%] snap-center h-[400px] sm:h-[450px] md:h-[350px] rounded-xl flex sm:flex-col md:flex-col items-center m-4 p-4 gap-4 cursor-pointer border-[1px] border-[#6A6A6A]'>
+            <div className='flex min-w-[75%] snap-center h-[400px] sm:h-[450px] md:h-[350px] rounded-xl sm:flex-col md:flex-col items-center justify-center m-4 p-4 sm:p-[1px] md:p-[1px] gap-4 cursor-pointer border-[1px] border-[#6A6A6A]'>
               {author && 
               <>           
-                <div className='w-full flex xl:flex-col lg:flex-col items-center justify-center gap-4'>
-                    {photoAuthor &&<Image className='pointer-events-none rounded-full' src={photoAuthor} width={100} height={100} alt={`Photo de ${author}`}/>}
-                    <div className='w-full flex justify-center items-center gap-4 xl:flex-col lg:flex-col'>
-                      <h3 className='xl:text-2xl lg:text-2xl text-xl'>{author}</h3>
-                      <p className='xl:text-xl lg:text-xl'>{job}</p>
-                      <div className='flex gap-4 items-center'>
+                <div className='w-1/5 flex items-center justify-center gap-4'>
+                  <div className='flex justify-center items-center gap-4 xl:flex-col lg:flex-col'>
+                    <div className='w-[100px] h-[100px] relative md:w-[80px] sm:w-[80px] md:h-[50px] sm:h-[50px]'>
+                      {photoAuthor &&<Image className='pointer-events-none rounded-full absolute' src={photoAuthor} fill={true} alt={`Photo de ${author}`}/>}
+                    </div>
+                      <h3 className='xl:text-2xl lg:text-2xl text-xl text-center'>{author}</h3>
+                      <p className='xl:text-xl lg:text-xl text-center'>{job}</p>
+                      <div className='flex gap-4 items-center sm:flex-col'>
                           {linkedin&& <Link href={linkedin}>
                                 <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                   <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -37,7 +39,7 @@ function Slide({author, job, photoAuthor, testimonial, website, linkedin}:Slider
                       </div>
                     </div>
                 </div>
-                <div>
+                <div className='w-4/5'>
                   <Image className='pointer-events-none' src={quotes} width={30} height={30} alt='quotes'/>
                   <p className='xl:text-xl lg:text-xl'>{testimonial}</p>
                 </div>
