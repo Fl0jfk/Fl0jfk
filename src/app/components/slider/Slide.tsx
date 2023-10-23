@@ -8,8 +8,8 @@ function Slide({author, job, photoAuthor, testimonial, website, linkedin}:Slider
             <div className='flex min-w-[75%] snap-center h-[400px] sm:h-[450px] md:h-[350px] rounded-xl sm:flex-col md:flex-col items-center justify-center m-4 p-4 sm:p-[1px] md:p-[1px] gap-4 cursor-pointer border-[1px] border-[#6A6A6A]'>
               {author && 
               <>           
-                <div className='w-1/5 flex items-center justify-center gap-4'>
-                  <div className='flex justify-center items-center gap-4 xl:flex-col lg:flex-col'>
+                <div className='w-1/5 flex items-center justify-center xl:gap-4 lg:gap-4 sm:gap-0 md:gap-0'>
+                  <div className='flex justify-center items-center gap-4 xl:flex-col sm:gap-0 md:gap-0 lg:flex-col'>
                     <div className='w-[100px] h-[100px] relative md:w-[80px] sm:w-[80px] md:h-[50px] sm:h-[50px]'>
                       {photoAuthor &&<Image className='pointer-events-none rounded-full absolute' src={photoAuthor} fill={true} alt={`Photo de ${author}`}/>}
                     </div>
@@ -39,7 +39,7 @@ function Slide({author, job, photoAuthor, testimonial, website, linkedin}:Slider
                       </div>
                     </div>
                 </div>
-                <div className='w-4/5'>
+                <div className='w-4/5 overflow-scroll'>
                   <Image className='pointer-events-none' src={quotes} width={30} height={30} alt='quotes'/>
                   <p className='xl:text-xl lg:text-xl'>{testimonial}</p>
                 </div>
