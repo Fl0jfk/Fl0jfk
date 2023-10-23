@@ -28,7 +28,7 @@ function Navbar({menuOpened, onLinkClick} :NavbarProps ){
             <AnimatePresence>
             {menuOpened && <motion.nav 
                     style={{background: `${bgMenuOpen}`}} 
-                    className={`md:${menuOpen} sm:${menuOpen} gap-10 text-2xl flex flex-col top-0 left-0 fixed justify-center items-center top-0 left-0 w-full h-[100vh] z-[9] xl:hidden lg:hidden`}
+                    className={`md:${menuOpen} sm:${menuOpen} gap-10 text-4xl flex flex-col top-0 left-0 fixed justify-center items-center top-0 left-0 w-full h-[100vh] z-[9] xl:hidden lg:hidden`}
                     initial={{translateX: "100%"}}
                     animate={{translateX: "0%", transition:{duration: 0.5, ease: "easeInOut"}}}
                     exit={{translateX:"100%", transition:{duration: 0.5, ease: "easeInOut"}}}

@@ -5,7 +5,7 @@ function Contact (){
     return (
         <section id="contact" className="p-4 flex flex-col">
             <h2 className='text-7xl mb-10 md:text-5xl sm:text-4xl text-center'>Contact Me</h2>
-            <div className="flex flex-col gap-4 p-8 bg-grey rounded-xl">
+            <div className="flex flex-col gap-4 p-8 border-[1px] border-[#6A6A6A] rounded-xl">
                 <div className="flex w-full items-center justify-center gap-4">
                     <Link href={"mailto:florian.hacqueville@hotmail.fr?subject=Votre profil m'intéresse!"}>
                         <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
