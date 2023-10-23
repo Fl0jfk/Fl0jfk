@@ -48,6 +48,8 @@ type Testimonial = {
   job: string;
   photoAuthor: string;
   testimonial: string;
+  website: string;
+  linkedin: string;
 };
 
 type Other = {
