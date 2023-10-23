@@ -92,7 +92,8 @@ export const DataProvider = ({ children }: PropsWithChildren<{}>) => {
 
   const fetchData = useCallback(async () => {
     try {
-      const response = await fetch("/data.json");
+      const response = await fetch("https://fl0jfk.s3.eu-west-3.amazonaws.com/data.json");
+      console.log(response)
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
