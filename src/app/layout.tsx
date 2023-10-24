@@ -7,7 +7,14 @@ export const metadata: Metadata = {
   themeColor: "black",
   appleWebApp: true,
   viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
-  
+  icons: {
+    icon: '/icon.png',
+    apple: '/apple-touch-icon.png',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/apple-touch-icon-precomposed.png',
+    }
+  }
 }
 
 export default function RootLayout({
