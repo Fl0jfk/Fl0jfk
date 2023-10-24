@@ -26,7 +26,7 @@ function Navbar({menuOpened, onLinkClick} :NavbarProps ){
     return (
         <>
             <AnimatePresence>
-            {menuOpened && <motion.nav 
+                {menuOpened && <motion.nav 
                     style={{background: `${bgMenuOpen}`}} 
                     className={`md:${menuOpen} sm:${menuOpen} gap-10 text-4xl flex flex-col top-0 left-0 fixed justify-center items-center top-0 left-0 w-full h-[100vh] z-[9] xl:hidden lg:hidden`}
                     initial={{translateX: "100%"}}
@@ -43,7 +43,7 @@ function Navbar({menuOpened, onLinkClick} :NavbarProps ){
                     <Link className='hover:scale-110' href="#about" onClick={handleLinkClick} aria-label="Link to section About">About</Link>
                     <Link className='hover:scale-110' href="#skills" onClick={handleLinkClick} aria-label="Link to section Skills">Skills</Link>
                     <Link className='hover:scale-110' href="#portfolio" onClick={handleLinkClick} aria-label="Link to section Portfolio">Portfolio</Link>
-                    <Link className='hover:scale-110' href="#contact" onClick={() => setClickOnLink(false)} aria-label="Link to section Contact">Contact</Link>
+                    <Link className='hover:scale-110' href="#contact" onClick={handleLinkClick} aria-label="Link to section Contact">Contact</Link>
                 </motion.nav>
                 }
             </AnimatePresence>
