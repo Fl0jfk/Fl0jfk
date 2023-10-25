@@ -19,7 +19,7 @@ function Project (){
      if (data) {
             return (
                 <section id="portfolio" className="p-8 flex flex-col justify-center items-center w-full">
-                    <h2 className='text-7xl mb-10 md:text-5xl sm:text-4xl w-full'>Portfolio</h2>
+                    <h2 className='text-7xl mb-10 md:text-5xl sm:text-4xl w-full text-center'>Portfolio</h2>
                     <FilterButton onChange={(e) => setSelectedCategory(e.target.value)} selectedCategory={selectedCategory}/>
                     <motion.div className='grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 gap-8 items-center justify-center w-full'>
                         <AnimatePresence>
