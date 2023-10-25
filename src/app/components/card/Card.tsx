@@ -41,10 +41,10 @@ function Card ({whatCard, svg, name, category, projectImg, level, shortDescripti
                             {projectImg && <Image src={projectImg} alt={`Image du site : ${name}`} width={500} height={850} style={{objectFit: "contain"}}  className={category === "Web" ? "rounded-lg" : "rounded-3xl"}/>}
                         </div> 
                     </div>
-                    <div className={`flip-card-back flex-col rounded-xl p-8 gap-1 gap-4 cursor-pointer w-full h-[500px] ${whatFace ? "flex" : "hidden"}`} style={{background: `${background}`}}>
+                    <div className={`flip-card-back flex-col rounded-xl p-8 gap-4 cursor-pointer w-full h-[500px] overflow-hidden ${whatFace ? "flex" : "hidden"}`} style={{background: `${background}`}}>
                         <h3 className="text-4xl">{name}</h3>
-                        <div className="overflow-scroll">
-                            <p className="text-xl">{projectDesc}</p>
+                        <div className="overflow-y-scroll overflow-x-hidden w-full">
+                            <p className="text-xl w-full">{projectDesc}</p>
                         </div>
                         <div className="flex items-center self-center gap-4">
                             {githubLink &&  <Link href={githubLink}>

@@ -1,6 +1,3 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-
 function About (){
     return (
         <section id="about"className="p-4 flex flex-col items-center justify-center mt-12 sm:mt-0 max-w-[1000px] w-full self-center">
