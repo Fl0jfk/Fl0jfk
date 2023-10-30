@@ -32,7 +32,7 @@ function Header(){
             variants={{ visible: { y: 0 }, hidden: { y: "-100%" }}} 
             animate={hidden ? "hidden" : "visible"}
             transition={{duration: 0.35, ease: "easeInOut"}}
-            className={`flex p-4 justify-between w-full md:fixed sm:fixed z-[12] md:mb-[100px] md:bg-[#000000] sm:bg-[#000000] ${opacityMenu}`}>
+            className={`flex p-4 justify-between w-full md:fixed sm:fixed z-[12] md:mb-[100px] md:bg-[#000000] sm:bg-[#000000] ${opacityMenu} max-w-[1440px] self-center`}>
                 <div className='w-2/12 h-[100px] md:h-[50px] sm:h-[30px] flex items-center pt-4'>
                     {data.profile.memoji && 
                         <Image src={data.profile.memoji} alt='Mon memoji' width={100} height={100} className='cursor-pointer z-[8]' onClick={()=>{window.scrollTo({top:0, left:0, behavior:'smooth'})}}/>
