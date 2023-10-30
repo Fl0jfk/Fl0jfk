@@ -17,7 +17,7 @@ function Contact (){
                             <path d="M8 10H8.01M12 10H12.01M16 10H16.01M4 4H20V16H12L7 21V16H4V4Z" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </Link>
-                    <Link href={"https://www.linkedin.com/in/florian-hacqueville-mathi-a9a557254"} aria-label="Link to my LinkedIn profile">
+                    <Link href={"https://www.linkedin.com/in/florian-hacqueville-mathi-a9a557254"} aria-label="Link to my LinkedIn profile" target="blank">
                         <svg width="25px" height="25px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                             <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                                 <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)" fill="#fff">

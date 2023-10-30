@@ -47,7 +47,7 @@ function Card ({whatCard, svg, name, category, projectImg, level, shortDescripti
                             <p className="text-xl w-full">{projectDesc}</p>
                         </div>
                         <div className="flex items-center self-center gap-4">
-                            {githubLink &&  <Link href={githubLink}>
+                            {githubLink &&  <Link href={githubLink} target="blank">
                                     <svg width="30px" height="30px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                         <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                                             <g transform="translate(-140.000000, -7559.000000)" fill="white">
@@ -59,7 +59,7 @@ function Card ({whatCard, svg, name, category, projectImg, level, shortDescripti
                                     </svg>
                                 </Link>
                             }
-                            {siteLink && <Link href={siteLink}>
+                            {siteLink && <Link href={siteLink} target="blank">
                                     <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g strokeWidth="0"/>
                                         <g strokeLinecap="round" strokeLinejoin="round"/>

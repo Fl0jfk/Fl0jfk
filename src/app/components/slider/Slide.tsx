@@ -16,7 +16,7 @@ function Slide({author, job, photoAuthor, testimonial, website, linkedin}:Slider
                         <h3 className='xl:text-2xl lg:text-2xl text-xl text-center'>{author}</h3>
                         <p className='xl:text-xl lg:text-xl text-center'>{job}</p>
                         <div className='flex gap-4 sm:gap-0 md:gap-0 items-center sm:flex-col md:flex-col sm:mt-[5px] md:mt-[5px]'>
-                            {linkedin&& <Link href={linkedin} aria-label={`Link to profile linkedin of ${author}`}>
+                            {linkedin&& <Link href={linkedin} aria-label={`Link to profile linkedin of ${author}`} target="blank">
                                   <svg width="18px" height="18px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                     <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                                         <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)" fill="#fff">
@@ -27,7 +27,7 @@ function Slide({author, job, photoAuthor, testimonial, website, linkedin}:Slider
                                     </g>
                                 </svg>
                               </Link>}
-                            {website&& <Link href={website} aria-label={`Link to website of ${author}`}>
+                            {website&& <Link href={website} aria-label={`Link to website of ${author}`} target="blank">
                                 <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='mt-[3px]'>
                                   <g stroke-width="1"></g>
                                   <g stroke-linecap="round" stroke-linejoin="round" fill="#fff"></g>
