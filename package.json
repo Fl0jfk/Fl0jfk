@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "@react-google-maps/api": "latest",
+    "@types/nodemailer": "^6.4.14",
     "framer-motion": "latest",
     "next": "latest",
+    "nodemailer": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-hook-form": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",

@@ -1,11 +1,15 @@
 import Link from "next/link";
 import Map from "../map/Map";
+import FormContact from "./FormContact";
 
 function Contact (){
     return (
         <section id="contact" className="p-4 flex flex-col items-center w-full">
             <h2 className='text-7xl mb-10 md:text-5xl sm:text-4xl text-center'>Contact</h2>
             <div className="flex flex-col gap-4 p-8 border-[1px] border-[#6A6A6A] rounded-xl w-full max-w-[1000px]">
+                <div className="w-full flex items-center justify-center">
+                    <Link href="/CV FHM.pdf" className="underline" target="blank">Vous pouvez également télécharger mon CV ici !</Link>
+                </div>
                 <div className="flex w-full items-center justify-center gap-4">
                     <Link href={"mailto:florian.hacqueville@hotmail.fr?subject=Votre profil m'intéresse!"} aria-label="Link who open your Mail Service and purpose a pre-filled email">
                         <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +21,7 @@ function Contact (){
                             <path d="M8 10H8.01M12 10H12.01M16 10H16.01M4 4H20V16H12L7 21V16H4V4Z" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </Link>
-                    <Link href={"https://www.linkedin.com/in/florian-hacqueville-mathi-a9a557254"} aria-label="Link to my LinkedIn profile" target="blank">
+                    <Link href={"https://www.linkedin.com/in/florian-hacqueville-mathi/"} aria-label="Link to my LinkedIn profile" target="blank">
                         <svg width="25px" height="25px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                             <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                                 <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)" fill="#fff">
@@ -29,7 +33,10 @@ function Contact (){
                         </svg>
                     </Link>
                 </div>
-                <Map/>
+                <div className="flex gap-10">
+                    <FormContact/>
+                    <Map/>
+                </div>
             </div>  
         </section>
     )
