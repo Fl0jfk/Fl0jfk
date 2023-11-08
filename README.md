@@ -1,7 +1,7 @@
 <br/>
 <div align="center"><img src="https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/profile/Fl0jfk+Memoji.webp" height="150" width="150" /></div>
 
-<h1 align="center"><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Raleway&size=22&duration=4000&pause=500&color=E2A2F7&center=true&random=false&width=435&lines=Hi+There+%F0%9F%91%8B;I'm+Florian%2C+from+France" alt="Typing SVG" /></a></h1>
+<h1 align="center"><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Raleway&size=22&duration=4000&pause=500&color=03fc0f&center=true&random=false&width=435&lines=Hi+There+%F0%9F%91%8B;I'm+Florian%2C+from+France" alt="Typing SVG" /></a></h1>
 <h3 align="center">A passionate front-end developer [Javascript | React | Tailwind]</h3>
 <br/>
 <div  align="left"><img src="https://visitor-badge.laobi.icu/badge?page_id=Fl0jfk.Fl0jfk-badge" /></div>
@@ -69,7 +69,7 @@
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Fl0jfk&show_icons=true&count_private=true&hide_border=true&theme=dark" />
 </div>
-<div align="center>
+<div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fl0jfk&hide_border=true&layout=compact&theme=dark" height="160" />  
 </div>
 <br/> 
