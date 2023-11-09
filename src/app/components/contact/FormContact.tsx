@@ -16,7 +16,7 @@ function FormContact () {
     }
   
     return (
-        <section className="flex items-center w-[50%] justify-center">
+        <section className="flex items-center w-[50%] justify-center sm:w-full">
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='mb-5'>
                     <label htmlFor='name' className='mb-3 block text-base font-medium'>

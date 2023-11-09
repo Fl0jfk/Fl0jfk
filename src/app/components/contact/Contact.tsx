@@ -33,7 +33,7 @@ function Contact (){
                         </svg>
                     </Link>
                 </div>
-                <div className="flex gap-10">
+                <div className="flex gap-10 sm:flex-col sm:items-center">
                     <FormContact/>
                     <Map/>
                 </div>
