@@ -8,7 +8,7 @@ function Contact (){
             <h2 className='text-7xl mb-10 md:text-5xl sm:text-4xl text-center'>Contact</h2>
             <div className="flex flex-col gap-4 p-8 border-[1px] border-[#6A6A6A] rounded-xl w-full max-w-[1000px]">
                 <div className="w-full flex items-center justify-center">
-                    <Link href="/CV FHM.pdf" className="underline" target="blank">Vous pouvez également télécharger mon CV ici !</Link>
+                    <Link href="/CV Florian Hacqueville-Mathi.pdf" className="underline" target="blank">Vous pouvez également télécharger mon CV ici !</Link>
                 </div>
                 <div className="flex w-full items-center justify-center gap-4">
                     <Link href={"mailto:florian.hacqueville@hotmail.fr?subject=Votre profil m'intéresse!"} aria-label="Link who open your Mail Service and purpose a pre-filled email">
