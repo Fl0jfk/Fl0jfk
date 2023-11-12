@@ -199,8 +199,8 @@
             "description": "Landing Page",
             "techs": "Next Tailwind",
             "github": "https://github.com/Fl0jfk/Calirotis",
-            "website": "https://calirotis-ezalv765j-fl0jfk.vercel.app",
-            "background": "rgb(220,69,50)"
+            "website": "https://calirotis.vercel.app/",
+            "background": "linear-gradient(to bottom, #000000, #d74534)"
         },
         {
             "id":9,
