@@ -1,0 +1,33 @@
+{
+  "name": "fl0jfk",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-google-maps/api": "latest",
+    "@types/nodemailer": "^6.4.14",
+    "framer-motion": "latest",
+    "next": "14.0.3",
+    "nodemailer": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-ga": "^3.3.1",
+    "react-hook-form": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
