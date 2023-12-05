@@ -1,14 +1,12 @@
 import './globals.css';
-import type { Metadata   } from 'next';
+import type { Metadata, Viewport   } from 'next';
 import AxeptioInjector from './utils/AxeptioInjector';
 import Analytics from './utils/Analytics';
 
 export const metadata: Metadata = {
   title: 'Fl0jfk',
   description: 'My personal website',
-  themeColor: "black",
   appleWebApp: true,
-  viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
   icons: {
     icon: '/icon.png',
     apple: '/apple-touch-icon.png',
@@ -17,6 +15,13 @@ export const metadata: Metadata = {
       url: '/apple-touch-icon-precomposed.png',
     }
   }
+}
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "black"
 }
 
 export default function RootLayout({
