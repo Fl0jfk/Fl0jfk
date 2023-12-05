@@ -1,5 +1,5 @@
 import './globals.css';
-import type { Metadata, Viewport   } from 'next';
+import type { Metadata, Viewport } from 'next';
 import AxeptioInjector from './utils/AxeptioInjector';
 import Analytics from './utils/Analytics';
 
@@ -33,8 +33,8 @@ export default function RootLayout({
     <html lang="fr">
         <body className="flex flex-col w-screen text-white gradient-background">  
          {children}
-         <Analytics/>
          <AxeptioInjector/>
+         <Analytics/>
         </body>
     </html>
   )
