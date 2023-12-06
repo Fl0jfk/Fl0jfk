@@ -1,6 +1,8 @@
 import Link from "next/link";
-import Map from "../map/Map";
+import { lazy } from "react";
 import FormContact from "./FormContact";
+
+const Map = lazy(() => import("../map/Map"))
 
 function Contact (){
     return (
