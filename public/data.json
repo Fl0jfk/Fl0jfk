@@ -24,13 +24,13 @@
             "id":3,
             "name": "JavaScript",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/javascript.svg",
-            "level": 60  
+            "level": 70  
         },
         {
             "id":4,
             "name": "React JS, React Native",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/react-javascript-js-framework-facebook.svg",
-            "level": 60  
+            "level": 70  
         },
         {
             "id":5,
@@ -42,13 +42,13 @@
             "id":6,
             "name": "TypeScript",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/typescript-official.svg",
-            "level": 20  
+            "level": 50  
         },
         {
             "id":7,
             "name": "Next JS",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/next-js.svg",
-            "level": 20  
+            "level": 70  
         },
         {
             "id":8,
@@ -60,7 +60,7 @@
             "id":9,
             "name": "AWS",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/aws.svg",
-            "level": 50  
+            "level": 60  
         },
         {
             "id":10,
@@ -72,13 +72,13 @@
             "id":11,
             "name": "GitHub",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/github.svg",
-            "level": 50  
+            "level": 70  
         },
         {
             "id":12,
             "name": "TailWind CSS",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/tailwind.svg",
-            "level": 50 
+            "level": 80 
         },
         {
             "id":13,
@@ -90,13 +90,13 @@
             "id":14,
             "name": "Redux ToolKit",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/redux.svg",
-            "level": 50  
+            "level": 70  
         },
         {
             "id": 15,
             "name": "WordPress",
             "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/wordpress.svg",
-            "level": 60
+            "level": 70
         },
         {
             "id": 16,
