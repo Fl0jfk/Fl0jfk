@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
 import FormContact from "./FormContact";
 
+const renderLoader = () => <p>Loading</p>;
 const Map = lazy(() => import("../map/Map"))
 
 function Contact (){
@@ -37,7 +38,9 @@ function Contact (){
                 </div>
                 <div className="flex gap-10 sm:flex-col sm:items-center">
                     <FormContact/>
-                    <Map/>
+                    <Suspense fallback={renderLoader()}>
+                        <Map/>
+                    </Suspense>
                 </div>
             </div>  
         </section>
