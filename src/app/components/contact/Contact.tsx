@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { lazy, Suspense } from "react";
+import dynamic from 'next/dynamic'
 import FormContact from "./FormContact";
 
-const renderLoader = () => <p>Loading</p>;
-const Map = lazy(() => import("../map/Map"))
+const DynamicMap = dynamic(() => import("../map/Map"), {
+    loading: ()=> <p>Loading...</p>
+})
 
 function Contact (){
     return (
@@ -38,9 +39,7 @@ function Contact (){
                 </div>
                 <div className="flex gap-10 sm:flex-col sm:items-center">
                     <FormContact/>
-                    <Suspense fallback={renderLoader()}>
-                        <Map/>
-                    </Suspense>
+                    <DynamicMap/>
                 </div>
             </div>  
         </section>
