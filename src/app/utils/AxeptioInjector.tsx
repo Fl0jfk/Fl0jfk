@@ -3,28 +3,40 @@
 import { useEffect } from "react";
 
 declare global {
-    interface Window {
-        _axcb?: any[];
-    }
+  interface Window {
+    _axcb?: any[];
+  }
 }
 
+const initializeAxeptio = () => {
+  // @ts-ignore
+  window._axcb = window._axcb || [];
+  // @ts-ignore
+  window._axcb.push((axeptio) => {
+    axeptio.on("cookies:complete", (choices: any) => {
+    });
+  });
+};
+
 const AxeptioInjector = () => {
-    useEffect(() => {
-        if (!window._axcb) {
-            const el = document.createElement("script");
-            el.setAttribute("src", "https://static.axept.io/sdk-slim.js");
-            el.setAttribute("type", "text/javascript");
-            el.setAttribute("async", "true");
-            el.setAttribute("data-id", "656f63b43dacbe63ad90b34c");
+  useEffect(() => {
+    const hasAcceptedCookies = document.cookie.includes("_ga");
+    const isAxeptioScriptLoaded = document.head.querySelector("[src='https://static.axept.io/sdk-slim.js']");
+    if (!hasAcceptedCookies && !isAxeptioScriptLoaded) {
+      const el = document.createElement("script");
+      el.src = "https://static.axept.io/sdk-slim.js";
+      el.type = "text/javascript";
+      el.async = true;
+      el.setAttribute("data-id", "656f63b43dacbe63ad90b34c");
 
-            if (document.body !== null) {
-                document.body.appendChild(el);
-            }
-        }
-    }, []);
+      document.head.appendChild(el);
+      initializeAxeptio();
+    }
+  }, []);
 
-    // This component doesn't render anything (return null)
-    return null;
+  return null;
 };
 
 export default AxeptioInjector;
+
+

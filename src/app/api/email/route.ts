@@ -9,14 +9,14 @@ export async function POST(request: NextRequest) {
   const transport = nodemailer.createTransport({
     service: 'gmail',
       auth: {
-        user: process.env.MY_EMAIL,
-        pass: process.env.MY_PASSWORD,
+        user: process.env.NEXT_PUBLIC_MY_EMAIL,
+        pass: process.env.NEXT_PUBLIC_MY_PASSWORD,
       },
     });
   
     const mailOptions: Mail.Options = {
-      from: process.env.MY_EMAIL,
-      to: process.env.MY_EMAIL,
+      from: process.env.NEXT_PUBLIC_MY_EMAIL,
+      to: process.env.NEXT_PUBLIC_MY_EMAIL,
       // cc: email, (uncomment this line if you want to send a copy to the sender)
       subject: `Vous avez reçu un mail de ${name} ${email} depuis votre site internet.`,
       text: message,

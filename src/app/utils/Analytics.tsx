@@ -1,41 +1,48 @@
 "use client"
 
-import { Router } from "next/router";
 import { useEffect } from "react";
 import ReactGA from "react-ga";
+import { Router } from "next/router";
 
 const Analytics: React.FC = () => {
-    const analyticsTrackingID = process.env.ANALYTICS_ID!;
-    useEffect(() => {
-        ReactGA.initialize(analyticsTrackingID);
+  const analyticsTrackingID = process.env.NEXT_PUBLIC_ANALYTICS_ID;
 
-        // Log initialization to console
-        console.log("Google Analytics initialized");
+  useEffect(() => {
+    const hasAcceptedCookies = document.cookie.includes("_ga");
+    if (!hasAcceptedCookies && analyticsTrackingID) {
+      ReactGA.initialize(analyticsTrackingID, {
+        // Add any additional options if needed
+      });
 
-        Router.events.on("routeChangeComplete", ReactGA.pageview);
+      console.log("Google Analytics initialized");
 
-        // @ts-ignore
-        window._axcb = window._axcb || [];
-        // @ts-ignore
-        window._axcb.push((axeptio) => {
-            axeptio.on("cookies:complete", (choices: any) => {
-                // Log choices to console
-                console.log("Cookie choices:", choices);
+      Router.events.on("routeChangeComplete", ReactGA.pageview);
 
-                if (choices.google_analytics) {
-                    ReactGA.set({ anonymizeIp: false });
-                } else {
-                    ReactGA.set({ anonymizeIp: true });
-                }
-            });
+      // @ts-ignore
+      window._axcb = window._axcb || [];
+      // @ts-ignore
+      window._axcb.push((axeptio) => {
+        axeptio.on("cookies:complete", (choices: any) => {
+          console.log("Axeptio cookies:complete event", choices);
+
+          if (choices.google_analytics) {
+            ReactGA.set({ anonymizeIp: false });
+          } else {
+            ReactGA.set({ anonymizeIp: true });
+          }
         });
+      });
+    
+      return () => {
+        Router.events.off("routeChangeComplete", ReactGA.pageview);
+      };
+    }
+  }, [analyticsTrackingID]);
 
-        return () => {
-            Router.events.off("routeChangeComplete", ReactGA.pageview);
-        };
-    }, []);
-
-    return null;
+  return null;
 };
 
 export default Analytics;
+
+
+
