@@ -4,104 +4,104 @@
             "firstname" : "Florian",
             "lastname": "Hacqueville-Mathi",
             "profession": "Front Junior Developer",
-            "profilePhoto" : "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/profile/PP+Fl0jfk.webp",
-            "memoji" : "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/profile/Fl0jfk+Memoji.webp"
+            "profilePhoto" : "https://d3iss7bcwsd2ji.cloudfront.net/assets/profile/PP+Fl0jfk.webp",
+            "memoji" : "https://d3iss7bcwsd2ji.cloudfront.net/assets/profile/Fl0jfk+Memoji.webp"
         },
     "skills": [
         {
             "id":1,
             "name": "HTML",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/html-5.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/html-5.svg",
             "level": 90
         },
         {
             "id":2,
             "name": "CSS",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/css-3.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/css-3.svg",
             "level": 80  
         },
         {
             "id":3,
             "name": "JavaScript",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/javascript.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/javascript.svg",
             "level": 70  
         },
         {
             "id":4,
             "name": "React JS, React Native",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/react-javascript-js-framework-facebook.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/react-javascript-js-framework-facebook.svg",
             "level": 70  
         },
         {
             "id":5,
             "name": "Sass",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/sass.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/sass.svg",
             "level": 50  
         },
         {
             "id":6,
             "name": "TypeScript",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/typescript-official.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/typescript-official.svg",
             "level": 50  
         },
         {
             "id":7,
             "name": "Next JS",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/next-js.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/next-js.svg",
             "level": 70  
         },
         {
             "id":8,
             "name": "Expo",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/expo.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/expo.svg",
             "level": 20  
         },
         {
             "id":9,
             "name": "AWS",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/aws.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/aws.svg",
             "level": 60  
         },
         {
             "id":10,
             "name": "BootStrap",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/bootstrap.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/bootstrap.svg",
             "level": 50
         },
         {
             "id":11,
             "name": "GitHub",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/github.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/github.svg",
             "level": 70  
         },
         {
             "id":12,
             "name": "TailWind CSS",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/tailwind.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/tailwind.svg",
             "level": 80 
         },
         {
             "id":13,
             "name": "Vercel",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/vercel.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/vercel.svg",
             "level": 60  
         },
         {
             "id":14,
             "name": "Redux ToolKit",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/redux.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/redux.svg",
             "level": 70  
         },
         {
             "id": 15,
             "name": "WordPress",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/wordpress.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/wordpress.svg",
             "level": 70
         },
         {
             "id": 16,
             "name": "Notion",
-            "svg": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/skills/notion.svg",
+            "svg": "https://d3iss7bcwsd2ji.cloudfront.net/assets/skills/notion.svg",
             "level": 30
         }
     ],
@@ -110,7 +110,7 @@
             "id":1,
             "name": "Riding_Cities",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Riding+Cities.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/Riding+Cities.webp",
             "shortDescription": "showcase site",
             "description": "Client: Riding Cities, skateboard association; Mission: Update the Riding Cities website as follows:1. Create a new section, The Founding Members, with the names and photos of the association's creators.2. Modify the section containing the Download Class Schedule button to add a title and two buttons for downloading two different class schedules (one for children and one for adults). Information about the code: Only HTML code needs to be developed. The existing code contains lines that can be reused and adapted to achieve the layout shown in the mockup. The CSS code is already in place, and you should copy and paste the existing CSS classes to style and format the elements as shown in the mockup.",
             "techs": "HTML CSS",
@@ -122,7 +122,7 @@
             "id":2,
             "name": "Booki",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Booki.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/Booki.webp",
             "shortDescription": "showcase site",
             "description": "The development of the new Booki website is subject to a set of functional and technical specifications validated by the Product team. The functional specifications include the following features: 1. A search function that allows users to search for accommodations in a given city through an editable field. 2. Links to Accommodations and Activities in the header, directing users to the appropriate sections. 3. The ability to click on all accommodation or activity cards. 4. The capability to filter accommodations by theme, with mouse hover effects. It's important to note that the filters are not yet functional, as they are part of an initial version to validate the interface. On the technical side, three mockups have been designed for desktop, tablet, and mobile formats. Breakpoints are defined at 1024 px for desktop, 768 px for tablets, and below 768 px for phones. A maximum width of 1440 px is established to prevent excessive page expansion, with white space appearing beyond this width. The minimum width is set at 320 px. Development should follow a Desktop First approach, starting with desktops and then adapting to tablets and phones using Media Queries. Icons come from the Font Awesome library, and the colors used are blue (#0065FC), light blue (#DEEBFF), and gray (#F2F2F2) for the background. The recommended font is Raleway, accessible via Google Fonts. Flexbox is recommended for layout, and the use of semantic tags such as header, nav, h1-h2-h3, main, section, article, and footer is essential. Code validity is paramount, with requirements for HTML and CSS code that conforms to W3C validators. It is crucial to avoid unnecessary code duplication, prefer the use of CSS classes to target elements rather than using element names themselves, and ensure that HTML code does not contain CSS properties. Browser compatibility must be ensured for the latest versions of Google Chrome and Mozilla Firefox. Finally, there are restrictions in place, including the prohibition of using CSS frameworks such as Bootstrap or Tailwind CSS, as well as CSS preprocessors like Sass or Less. No other languages, such as JavaScript, are allowed. Adhering to these specifications is essential to ensure the success of the development of the new Booki website.",
             "techs": "HTML CSS",
@@ -134,7 +134,7 @@
             "id":3,
             "name": "Ohmyfood",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Ohmyfood.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/Ohmyfood.webp",
             "shortDescription": "showcase site",
             "description": "My mission is to develop a mobile-first website that catalogs the menus of gourmet restaurants. In addition to the traditional reservation systems, customers will be able to customize their meal menu so that the dishes are ready upon their arrival. Say goodbye to waiting times at the restaurant!",
             "techs": "HTML CSS Sass",
@@ -146,7 +146,7 @@
             "id":4,
             "name": "Print-It",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Print-It.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/Print-It.webp",
             "shortDescription": "showcase site",
             "description": "The purpose of this project is to introduce you to the JavaScript programming language, which is highly popular among web developers. It is very structured and will guide you step by step in acquiring the fundamentals of the language. You will soon use it to develop more ambitious websites, but initially, take your first steps with JavaScript... Ideally, completing this project will take you 1 to 2 weeks at most (if you are dedicating full-time to your training). You will be exclusively supported by your mentor, both for the deliverables' completion and for the presentation, which will take the form of a discussion.",
             "techs": "HTML CSS JavaScript",
@@ -158,7 +158,7 @@
             "id":5,
             "name": "Portfolio Sophie Bluel",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Sophie+Bluel.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/Sophie+Bluel.webp",
             "shortDescription": "showcase site",
             "description": "I must develop: 1. The presentation page of the architect's work (using the provided HTML as a starting point). 2. The site administrator's (the client's) login page (code to be created from scratch). 3. The modal for uploading new media (code to be created from scratch).",
             "techs": "HTML CSS JavaScript",
@@ -170,7 +170,7 @@
             "id":6,
             "name": "La Maison Jungle",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Maison+Jungle.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/Maison+Jungle.webp",
             "shortDescription": "commercial website",
             "description": "",
             "techs": "HTML CSS JavaScript",
@@ -182,7 +182,7 @@
             "id":7,
             "name": "Kasa",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Kasa.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/Kasa.webp",
             "shortDescription": "showcase site",
             "description": "Start the React project and develop the entire application, including React components, React Router routes, following the Figma mockups (responsive!), and all the information I provide below. All of this with high-quality code!",
             "techs": "React Sass",
@@ -194,7 +194,7 @@
             "id":8,
             "name": "Calirotis",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Calirotis.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/Calirotis.webp",
             "shortDescription": "showcase site",
             "description": "Landing Page",
             "techs": "Next Tailwind",
@@ -206,7 +206,7 @@
             "id":9,
             "name": "Nina Carducci",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Nina+Carducci.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/Nina+Carducci.webp",
             "shortDescription": "showcase site",
             "description": "To summarize the scope of my mission, I will: 1. Perform a comprehensive optimization of the website, focusing on both performance and SEO. 2. Implement local SEO using Schema.org. 3. Add metadata for social media platforms. 4. Make accessibility-related modifications to the site. 5. Generate an optimization report detailing all the actions taken and their impact.",
             "techs": "HTML CSS JavaScript",
@@ -218,7 +218,7 @@
             "id":10,
             "name": "PhotoDroner76",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/PhotoDroner76.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/PhotoDroner76.webp",
             "shortDescription": "showcase site",
             "description": "",
             "techs": "React Sass",
@@ -230,7 +230,7 @@
             "id":11,
             "name": "724 Events",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/724Events.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/724Events.webp",
             "shortDescription": "showcase site",
             "description": "The bugs to be fixed: I've identified the following bugs: 1. The carousel displays events in random order instead of sorting them by date in descending order. 2. The filter for the Our Achievements section isn't working. Achievements should be filterable and display the correct months. 3. The form submits, but the confirmation message doesn't appear. To fix these bugs, it will be necessary to implement missing code segments and correct typos. I didn't have time to identify all the bugs. We'll need to search for and address the others based on Jean-Baptiste's requirements. Some of them can be detected through testing, so it's possible to find the bugs using failed tests. I recommend using React Developer Tools to understand the project's architecture and state/context propagation. Testing: The application is largely tested: - Components are tested (unit testing). - The code is thoroughly tested. Ensure that all test indicators turn green once the bugs are resolved.",
             "techs": "React Sass",
@@ -242,7 +242,7 @@
             "id":12,
             "name": "Temperature Converter",
             "category": "Mobile",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Temperature+Converter.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/Temperature+Converter.webp",
             "shortDescription": "mobile app",
             "description": "An mobile application that allows you to convert temperatures between Celsius and Fahrenheit. The app is compatible with both iPhone and Android through React Native and Expo.",
             "techs": "React Native Expo",
@@ -254,7 +254,7 @@
             "id":13,
             "name": "React RTK Shop",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/RTK+Shop.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/RTK+Shop.webp",
             "shortDescription": "commercial website",
             "description": "",
             "techs": "React Redux Toolkit",
@@ -266,7 +266,7 @@
             "id":14,
             "name": "React RTK Books",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/RTK+Books.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/RTK+Books.webp",
             "shortDescription": "site with call API",
             "description": "",
             "techs": "React Redux Toolkit",
@@ -278,7 +278,7 @@
             "id":15,
             "name": "ArgentBank",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/ArgentBank.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/ArgentBank.webp",
             "shortDescription": "site with database",
             "description": "My tasks: 1. Create the complete and responsive web application using React. As a starting point, we have provided you with static HTML and CSS for the homepage, login page, and profile page. 2. Utilize Redux to manage the state of the entire application. What the application should do: - The user can visit the homepage. - The user can log into the system. - The user can log out of the system. - The user can only view information related to their own profile after successfully logging in. - The user cannot edit their first name or last name but can modify their username.",
             "techs": "React Redux Toolkit",
@@ -290,7 +290,7 @@
             "id":16,
             "name": "Karine-Beauté-Zen",
             "category": "Web",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/projects/Karine-Beaute%CC%81-Zen.webp",
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/projects/Karine-Beaute%CC%81-Zen.webp",
             "shortDescription": "commercial website",
             "description": "A website build with WordPress and Beaver Builder, a shop is included with WooCommerce.",
             "techs": "Wordpress Beaver Builder WooCommerce",
@@ -303,12 +303,12 @@
         {
             "id":1,
             "name": "iMac",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/mockups/apple-imac-24-inch-2021-medium.webp"
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/mockups/apple-imac-24-inch-2021-medium.webp"
         },
         {
             "id":2,
             "name": "iPhone",
-            "img": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/mockups/apple-iphone-15-pro-max-2023-medium.webp"
+            "img": "https://d3iss7bcwsd2ji.cloudfront.net/assets/mockups/apple-iphone-15-pro-max-2023-medium.webp"
         }
     ],
     "experiences" : [
@@ -319,7 +319,7 @@
             "id": 1,
             "author": "Kévin Trillon",
             "job": "Front Junior Developer",
-            "photoAuthor": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/testimonials/KT-NB-160x160.jpg",
+            "photoAuthor": "https://d3iss7bcwsd2ji.cloudfront.net/assets/testimonials/KT-NB-160x160.jpg",
             "testimonial": "J'ai été recruté par Florian en tant qu'adjoint et on a fait équipe pendant presque cinq années, un lien professionnel et amical c'est créé, aujourd'hui nous nous formons tous les deux pour devenir développeur informatique car nous avons un attrait pour ce domaine depuis toujours sans jamais tenter notre chance. C'est maintenant chose faite.",
             "website": "",
             "linkedin": "https://www.linkedin.com/in/kévin-trillon-b67559254/"
@@ -328,7 +328,7 @@
             "id": 2,
             "author": "Benjamin Valleran",
             "job": "Front Junior Developer",
-            "photoAuthor": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/testimonials/Benjamin+Valleran+PP.jpeg",
+            "photoAuthor": "https://d3iss7bcwsd2ji.cloudfront.net/assets/testimonials/Benjamin+Valleran+PP.jpeg",
             "testimonial": "Après une collaboration de 2 ans dans la même entreprise dans le domaine de la vente, une relation professionnelle et amicale en a découlé.  Pendant cette période nous avons longuement abordé nos projet de réorientation professionnelle, et aujourd'hui nous avons eu l'occasion d'intégrer chacun une formation qui répond à nos attentes, permettant de nous entraider sur les différentes technologies.",
             "website": "https://drascure.github.io/Benjamin-VALLERAN/",
             "linkedin": "https://www.linkedin.com/in/benjamin-valleran-116266137/"
@@ -337,7 +337,7 @@
             "id": 3,
             "author": "Romain Leuillier",
             "job": "Lead Blockchain Engineer",
-            "photoAuthor": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/testimonials/Romain+Leuillier.jpeg",
+            "photoAuthor": "https://d3iss7bcwsd2ji.cloudfront.net/assets/testimonials/Romain+Leuillier.jpeg",
             "testimonial": "Florian a fait preuve d'une excellente performance tout au long de son parcours, et son dernier projet est de haute qualité. Il est prêt pour la soutenance et pourra bientôt célébrer sa réussite dans son parcours. Je lui souhaite tout le meilleur pour son avenir professionnel.",
             "website": "",
             "linkedin": "https://www.linkedin.com/in/romain-leuillier-b404044a/"
@@ -347,12 +347,12 @@
         {
             "id": 1,
             "name": "Link",
-            "src": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/others/link.svg"
+            "src": "https://d3iss7bcwsd2ji.cloudfront.net/assets/others/link.svg"
         },
         {
             "id": 2,
             "name": "Quotes",
-            "src": "https://fl0jfk.s3.eu-west-3.amazonaws.com/assets/others/quotes.svg"
+            "src": "https://d3iss7bcwsd2ji.cloudfront.net/assets/others/quotes.svg"
         }
     ]
 }
