@@ -22,10 +22,12 @@ function FormContact () {
                         Votre nom et prénom
                     </label>
                     <input
-                    type='text'
-                    placeholder='Nom et prénom'
-                    className='w-full rounded-full border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-black-500 focus:shadow-md text-black'
-                    {...register('name', { required: true })}
+                        id='name'
+                        autoComplete='true'
+                        type='text'
+                        placeholder='Nom et prénom'
+                        className='w-full rounded-full border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-black-500 focus:shadow-md text-black'
+                        {...register('name', { required: true })}
                     />
                 </div>
                 <div className='mb-5'>
@@ -33,10 +35,12 @@ function FormContact () {
                         Votre adresse mail
                     </label>
                     <input
-                    type='email'
-                    placeholder='exemple@domaine.fr'
-                    className='w-full rounded-full border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-black-500 focus:shadow-md text-black'
-                    {...register('email', { required: true })}
+                        type='email'
+                        autoComplete='true'
+                        id='email'
+                        placeholder='exemple@domaine.fr'
+                        className='w-full rounded-full border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-black-500 focus:shadow-md text-black'
+                        {...register('email', { required: true })}
                     />
                 </div>
                 <div className='mb-5'>
@@ -44,6 +48,7 @@ function FormContact () {
                     Message
                     </label>
                     <textarea
+                    id='message'
                     rows={4}
                     placeholder='Écrivez votre message ici ...'
                     className='w-full resize-none rounded-xl border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-black-500 focus:shadow-md text-black'
