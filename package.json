@@ -16,7 +16,7 @@
     "nodemailer": "^6.9.7",
     "react": "latest",
     "react-dom": "latest",
-    "react-ga": "^3.3.1",
+    "react-ga4": "^2.1.0",
     "react-hook-form": "^7.48.2"
   },
   "devDependencies": {

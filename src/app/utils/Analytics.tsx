@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
 import { useEffect } from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { Router } from "next/router";
 
 const Analytics: React.FC = () => {
@@ -9,14 +9,16 @@ const Analytics: React.FC = () => {
 
   useEffect(() => {
     const hasAcceptedCookies = document.cookie.includes("_ga");
+    
     if (!hasAcceptedCookies && analyticsTrackingID) {
-      ReactGA.initialize(analyticsTrackingID, {
-        // Add any additional options if needed
+      ReactGA.initialize(analyticsTrackingID);
+
+      // Log initialization to console
+      console.log("Google Analytics 4 initialized");
+
+      Router.events.on("routeChangeComplete", () => {
+        ReactGA.send({ hitType: "pageview", page: window.location.pathname });
       });
-
-      console.log("Google Analytics initialized");
-
-      Router.events.on("routeChangeComplete", ReactGA.pageview);
 
       // @ts-ignore
       window._axcb = window._axcb || [];
@@ -24,7 +26,6 @@ const Analytics: React.FC = () => {
       window._axcb.push((axeptio) => {
         axeptio.on("cookies:complete", (choices: any) => {
           console.log("Axeptio cookies:complete event", choices);
-
           if (choices.google_analytics) {
             ReactGA.set({ anonymizeIp: false });
           } else {
@@ -32,9 +33,11 @@ const Analytics: React.FC = () => {
           }
         });
       });
-    
+
       return () => {
-        Router.events.off("routeChangeComplete", ReactGA.pageview);
+        Router.events.off("routeChangeComplete", () => {
+          ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+        });
       };
     }
   }, [analyticsTrackingID]);
@@ -43,6 +46,7 @@ const Analytics: React.FC = () => {
 };
 
 export default Analytics;
+
 
 
 
