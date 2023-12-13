@@ -38,7 +38,7 @@ function Card ({whatCard, svg, name, category, projectImg, level, shortDescripti
                         <p>{shortDescription}</p>
                         { mockupAlt && mockupSrc && <Image src={mockupSrc} alt={mockupAlt} width={category === "Mobile" ? "230" :"0"} height={category === "Mobile" ? "230" : "0"} className="z-10 absolute top-[180px] left-[50px] sm:left-[100px]"/>}
                         <div className={category === "Web" ? "absolute top-[170px] left-[30px] w-[500px] h-[850px] rounded-lg" : "absolute left-[55px] sm:left-[110px] top-[185px] w-[215px] h-[300px] rounded-3xl"}>
-                            {projectImg && <Image src={projectImg} alt={`Image du site : ${name}`} width={500} height={850} style={{objectFit: "contain"}}  className={category === "Web" ? "rounded-lg" : "rounded-3xl"}/>}
+                            {projectImg && <Image src={projectImg} alt={`Image du site : ${name}`} width={500} height={850} style={{objectFit: "contain"}} sizes="90vw" className={category === "Web" ? "rounded-lg" : "rounded-3xl"}/>}
                         </div> 
                     </div>
                     <div className={`flip-card-back flex-col rounded-xl p-8 gap-4 cursor-pointer w-full h-[500px] overflow-hidden ${whatFace ? "flex" : "hidden"}`} style={{background: `${background}`}}>

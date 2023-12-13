@@ -11,7 +11,7 @@ function Slide({author, job, photoAuthor, testimonial, website, linkedin}:Slider
                   <div className='w-1/5 flex items-center justify-center xl:gap-4 lg:gap-4 sm:gap-0 md:gap-0'>
                     <div className='flex justify-center items-center gap-4 xl:flex-col sm:gap-0 md:gap-0 lg:flex-col'>
                       <div className='w-[100px] h-[100px] relative md:w-[80px] sm:w-[80px] md:h-[50px] sm:h-[50px]'>
-                        {photoAuthor &&<Image className='pointer-events-none rounded-full absolute' src={photoAuthor} fill={true} alt={`Photo de ${author}`}/>}
+                        {photoAuthor &&<Image className='pointer-events-none rounded-full absolute' src={photoAuthor} fill={true} alt={`Photo de ${author}`} sizes='10vw'/>}
                       </div>
                         <h3 className='xl:text-2xl lg:text-2xl text-xl text-center'>{author}</h3>
                         <p className='xl:text-xl lg:text-xl text-center'>{job}</p>
