@@ -6,16 +6,4 @@
 <div  align="left"><img src="https://visitor-badge.laobi.icu/badge?page_id=Fl0jfk.Fl0jfk-badge" /></div>
 <br/>
 <br/>
-  
 - 📚 I’m currently learning *Rust*
-
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Fl0jfk&show_icons=true&count_private=true&hide_border=true&theme=dark" />
-</div>
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fl0jfk&hide_border=true&layout=compact&theme=dark" height="160" />  
-</div>
-<br/>
